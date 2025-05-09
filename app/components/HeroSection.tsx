@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-    title: 'Power the Future with Solar',
-    subtitle: 'Sustainable energy solutions for a brighter tomorrow',
-    buttonText: 'Get Started'
+    image: "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg",
+    title: "Power the Future with Solar",
+    subtitle: "Sustainable energy solutions for a brighter tomorrow",
+    buttonText: "Get Started",
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg',
-    title: 'GreenBYSolar',
-    subtitle: 'Join the renewable energy revolution today',
-    buttonText: 'Learn More'
-  }
+    image:
+      "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
+    title: "GreenBYSolar",
+    subtitle: "Join the renewable energy revolution today",
+    buttonText: "Learn More",
+  },
 ];
 
 const HeroSection: React.FC = () => {
@@ -62,13 +63,13 @@ const HeroSection: React.FC = () => {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               {slides[currentSlide].title}
             </h1>
-            
+
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 sm:text-xl md:text-2xl">
               {slides[currentSlide].subtitle}
             </p>
-            
+
             <div className="mt-10">
-              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 ease-out bg-secondary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#019D4D] px-8 py-3 text-base font-medium text-white transition duration-300 ease-out hover:bg-[#016f36] focus:outline-none focus:ring-2 focus:ring-[#019D4D] focus:ring-offset-2 cursor-pointer">
                 <span className="relative flex items-center">
                   {slides[currentSlide].buttonText}
                 </span>
