@@ -11,7 +11,12 @@ import {
   MobileNavMenu,
 } from "@/app/components/ui/resizable-navbar";
 import { useState } from "react";
+
 import HeroSection from "./components/HeroSection";
+import SecondSection from "./components/secondSection";
+import ThirdSection from "./components/thirdSection";
+import ForthSection from "./components/forthSection";
+import Footer from "./components/Footer/footer";
 
 export function NavbarSection() {
   const navItems = [
@@ -113,11 +118,17 @@ export function NavbarSection() {
 
 const Page = () => {
   return (
-    <div>
+    <div className="bg-[#F5F5F5]">
       <div className="h-screen w-full">
         <HeroSection />
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+
+      <SecondSection />
+      <ThirdSection />
+      <ForthSection />
+      <Footer />
+
+      {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
         {[
           {
             id: 1,
@@ -197,7 +208,7 @@ const Page = () => {
             <h2 className="text-xl font-medium">{box.title}</h2>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
