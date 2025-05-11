@@ -9,30 +9,27 @@ export function secondSection() {
         SERVICES
       </h2>
       <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-        We are{" "}
-        <LinkPreview
-          url="https://beyondgreensolar.com"
-          className="font-bold"
-        >
-          <span className="text-[#019D4D]">Problem Solvers</span>
+        We offer{" "}
+        <LinkPreview url="https://beyondgreensolar.com" className="font-bold">
+          <span className="text-[#019D4D]">
+            Residential, Commercial & Industrial,
+          </span>
         </LinkPreview>{" "}
-        You can expect superior quality solar modules from{" "}
-        <LinkPreview
-          url="https://solartechinnovations.co.za"
-          className="font-bold"
-        >
-          <span className="text-[#019D4D]">SolarTech Innovations,</span>
+        <LinkPreview url="https://beyondgreensolar.com" className="font-bold">
+          <span className="text-[#019D4D]">Agriculture Solar Solutions</span>
         </LinkPreview>{" "}
-        and a dedicated team of certified installers performing calculations,
-        analysis, and designs for your ease.
+        tailored to your needs. Our systems also include Without Grid Backup
+        Solutions for uninterrupted power. With{" "}
+        <LinkPreview url="https://beyondgreensolar.com" className="font-bold">
+          <span className="text-[#019D4D]">Net Metering,</span>
+        </LinkPreview>{" "}
+        you can save more by sending excess energy back to the grid. Go solar
+        today and enjoy reliable, cost-effective, and eco-friendly energy!
       </p>
       <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto">
         Visit{" "}
-        <LinkPreview
-          url="https://beyondgreensolar.com"
-          className="font-bold"
-        >
-          <span className="text-[#019D4D]">BeyondGreenSolar</span>
+        <LinkPreview url="https://jinnahexpert.com" className="font-bold">
+          <span className="text-[#019D4D]">Jinnah Expert</span>
         </LinkPreview>{" "}
         for more information.
       </p>

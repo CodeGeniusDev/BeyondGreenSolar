@@ -1,21 +1,22 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const slides = [
   {
     id: 1,
     image: "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg",
-    title: "Power the Future with Solar",
-    subtitle: "Sustainable energy solutions for a brighter tomorrow",
+    title: "Go Solar with Jinnah Experts",
+    subtitle: "Clean, cheap, and easy energy.",
     buttonText: "Get Started",
   },
   {
     id: 2,
     image:
       "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
-    title: "GreenBYSolar",
-    subtitle: "Join the renewable energy revolution today",
+    title: "Smart Solar for Everyone",
+    subtitle: "Save money and enjoy clean energy with Jinnah Experts.",
     buttonText: "Learn More",
   },
 ];
@@ -70,11 +71,13 @@ const HeroSection: React.FC = () => {
             </p>
 
             <div className="mt-10">
-              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#019D4D] px-8 py-3 text-base font-medium text-white transition duration-300 ease-out hover:bg-[#016f36] focus:outline-none focus:ring-2 focus:ring-[#019D4D] focus:ring-offset-2 cursor-pointer">
-                <span className="relative flex items-center">
-                  {slides[currentSlide].buttonText}
-                </span>
-              </button>
+              <Link href="/about">
+                <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#019D4D] px-8 py-3 text-base font-medium text-white transition duration-300 ease-out hover:bg-[#016f36] focus:outline-none focus:ring-2 focus:ring-[#019D4D] focus:ring-offset-2 cursor-pointer">
+                  <span className="relative flex items-center">
+                    {slides[currentSlide].buttonText}
+                  </span>
+                </button>
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>

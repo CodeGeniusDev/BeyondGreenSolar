@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
       <div className="flex justify-center">
         <div className="bg-[#019D4D] text-center px-16 py-8 w-full max-w-md shadow-lg">
           <Link 
-            href="#" 
+            href="/" 
             className="text-white text-2xl font-semibold tracking-wide hover:opacity-90 transition-opacity duration-300"
           >
-            About Beyondgreen
+            About Jinnah Expert
           </Link>
         </div>
       </div>

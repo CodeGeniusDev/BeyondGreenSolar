@@ -95,17 +95,19 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
-      details: ["7/146 Street No 9, Block 3, DMCHS,", "Karachi Pakistan."],
+      details: [
+        "Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road Gulshan e Jamal Karachi, 75260.",
+      ],
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: ["UAN: 0300 0341934", "Landline: 021-34541934"],
+      details: ["UAN: 0332-3757694", "Landline: 021-34685110"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["info@beyondgreensolar.com"],
+      details: ["care@jinnahexpert.com"],
     },
   ];
 
@@ -298,7 +300,7 @@ const Contact = () => {
 
               <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.5098375318307!2d67.0893!3d24.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzU3LjAiTiA2N8KwMDUnMjEuNSJF!5e0!3m2!1sen!2s!4v1635789012345!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.075570687321!2d67.11628621024765!3d24.89540377781439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33917ce4d65f9%3A0xd45a062a3b2bf9c9!2sCantonment%20Shopping%20Mall!5e0!3m2!1sen!2s!4v1746992822520!5m2!1sen!2s"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

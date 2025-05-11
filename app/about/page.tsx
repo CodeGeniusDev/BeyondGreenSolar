@@ -26,7 +26,6 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="bg-white">
-      {/* Header Section */}
       <motion.div
         className="relative h-[200px] sm:h-[250px] md:h-[300px] w-full overflow-hidden"
         initial={{ opacity: 0 }}
@@ -49,12 +48,11 @@ const AboutPage: React.FC = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide text-center">
-            ABOUT BEYOND GREEN SOLAR
+            ABOUT JINNAH EXPERT
           </h1>
         </motion.div>
       </motion.div>
 
-      {/* Welcome Section */}
       <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-24">
         <motion.div
           className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
@@ -65,14 +63,11 @@ const AboutPage: React.FC = () => {
             visible: { transition: { staggerChildren: 0.3 } },
           }}
         >
-          <motion.div
-            className="w-full md:w-1/3 relative"
-            variants={fadeInUp}
-          >
+          <motion.div className="w-full md:w-1/3 relative" variants={fadeInUp}>
             <div className="bg-[#019D4D] p-6 mr-10 sm:p-8 text-white relative">
               <div className="flex flex-col justify-center items-center gap-2 py-8 sm:py-10 px-4 sm:px-6">
                 <h4 className="text-xs sm:text-sm text-center uppercase tracking-wider">
-                  ABOUT BEYONDGREEN
+                  ABOUT JINNAH EXPERT
                 </h4>
                 <h1 className="text-xl sm:text-2xl md:text-[2.2rem] font-bold text-white text-center">
                   Welcome to our Company
@@ -85,23 +80,68 @@ const AboutPage: React.FC = () => {
               />
             </div>
           </motion.div>
-          <motion.div className="w-full md:w-2/3 mt-12 md:mt-0" variants={fadeInUp}>
+          <motion.div
+            className="w-full md:w-2/3 mt-12 md:mt-0"
+            variants={fadeInUp}
+          >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Go Solar With Beyondgreen
+              Go Solar With Jinnah Expert
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
-              Beyondgreen Solar Solutions is a private entity which provides
-              sol ar energy services in Pakistan. Our renewable energy division,
-              which began in Brisbane, Australia in 2011, has been addressing
-              Pakistan's growing energy demands and challenges since 2015. We're
-              committed to delivering sustainable and efficient solar solutions
-              to homes and businesses across the country.
+              Jinnah Xpert (Private) Limited is an end-to-end solution provider
+              for our clients' solar needs. Our core essence lies in providing
+              the most-cost effective solar solutions following the best
+              practices in Installation and Commissioning for 1-tier PV Solar
+              power projects for both Grid-connected and Hybrid solution for
+              residential, commercial and industrial consumers.
+            </p>
+            <br />
+            <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+              As a leading solar solution provider, we offer a comprehensive
+              range of innovative services, including solar panel installation,
+              energy efficient solutions, and sustainable power system for
+              diverse applications. By choosing Jinnah Xpert, you're not just
+              embracing solar energy you're joining us and greener Pakistan.
             </p>
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Just Like Us Section */}
+      <div
+        className="container mx-auto px-4 py-8 sm:py-12 md:py-16"
+        ref={achievementsRef}
+      >
+        <motion.div
+          className="text-center mb-8 md:mb-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <h3 className="text-xl sm:text-2xl md:text-3xl py-4 mb-4 font-semibold text-gray-800">
+            What We Do
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+            At Jinnah Xpert (Pvt. Ltd.) we specialize in providing innovative
+            solar solutions that empower Pakistan's transition toward
+            sustainable energy sources. Our expertise lies in designing,
+            implementing, and maintaining cutting-edge solar systems for
+            residential, commercial, and industrial clients across the nation.
+            By harnessing the power of the sun, we offer a range of
+            comprehensive and tailored solutions, including solar panel
+            installations, energy storage. systems and efficient grid
+            intergration.
+          </p>
+          <br />
+          <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+            Our dedicated team of professionals collaborates closely with
+            clients to understand their unique energy needs, ensuring the
+            delivery of cost-effective, reliable, and eco-friendly solutions
+            that contribute to a greener and more resilient future for Pakistan.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="bg-gray-50 py-8 sm:py-12 md:py-16">
         <div className="container mx-auto px-4 mt-10">
           <motion.div
@@ -134,8 +174,10 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Achievements Section */}
-      <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16" ref={achievementsRef}>
+      <div
+        className="container mx-auto px-4 py-8 sm:py-12 md:py-16"
+        ref={achievementsRef}
+      >
         <motion.div
           className="text-center mb-8 md:mb-12"
           initial="hidden"
@@ -144,7 +186,7 @@ const AboutPage: React.FC = () => {
           variants={fadeInUp}
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-            Beyondgreen <span className="text-[#019D4D]">Achievements</span>
+            Jinnah Expert <span className="text-[#019D4D]">Achievements</span>
           </h3>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
@@ -178,10 +220,10 @@ const AboutPage: React.FC = () => {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 1 }}
             >
-              {isInView && <CountUp end={3000} duration={2} />}+
+              {isInView && <CountUp end={100} duration={2} />}+
             </motion.p>
             <p className="text-gray-600 mt-2 text-sm sm:text-base md:text-lg">
-              Happy Customers
+            Projects done.
             </p>
           </motion.div>
           <motion.div

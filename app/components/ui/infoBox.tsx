@@ -17,7 +17,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ title, description }) => {
         </p>
         <div>
           <Link 
-            href="#" 
+            href="/about" 
             className="text-[#019D4D] font-semibold hover:text-[#016f36] transition-colors duration-300 flex items-center group"
           >
             Read More 

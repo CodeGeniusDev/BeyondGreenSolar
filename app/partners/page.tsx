@@ -1,55 +1,87 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
-import { LogoCarousel } from '../components/ui/PartnerUI';
+import React from "react";
+import { motion } from "framer-motion";
+// import { LogoCarousel } from "../components/ui/PartnerUI";
 
 const Partners = () => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const partners = [
     {
-      name: 'LONGI',
-      logo: 'https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg',
-      nameColor: 'text-red-600',
-      description: 'Our market partner Longi needs no introduction to the solar industry. Its micro-crystalline technologies, product innovations, and optimization of the power-cost ratio keep it ahead of all other competitors. Moreover, the company provides about a quarter of the global market demand for solar modules. Being the world\'s most valuable company, Longi\'s association with Beyondgreen Solar is a big thing for solar in Pakistan. Therefore, being affiliated with Longi allows us to give replaceable warranties to our customers.'
+      name: "Jinko Solar",
+      logo: "https://images.seeklogo.com/logo-png/26/1/jinko-solar-logo-png_seeklogo-265492.png",
+      nameColor: "text-[#38AB30]",
     },
     {
-      name: 'GROWATT',
-      logo: 'https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg',
-      nameColor: 'text-green-600',
-      description: 'Growatt is a global leader in providing solar solutions, in form of smart panels, inverters, etc. These smart energy solutions are the future of solar energy solutions. Most importantly, our partnership with Growatt helps us incorporate these smart solutions in Pakistan and enhance our R&D processes. Indeed, Growatt is currently one of the top 10 inverter brands and the largest residential inverter supplier in the world!'
+      name: "Canadian Solar",
+      logo: "https://seeklogo.com/images/C/canadiansolar-logo-8222497A0C-seeklogo.com.png",
+      nameColor: "text-[#BD2727]",
     },
     {
-      name: 'HUAWEI',
-      logo: 'https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg',
-      nameColor: 'text-red-600',
-      description: 'Being a market leader in the industry, Huawei\'s presence in our market partners is indeed a bliss. Certainly, Huawei\'s big name in digital technology and innovation has created a revolution in the world of solar panels and modules. The optimization of latest technologies make Huawei\'s products rich in efficiency and effectiveness. We hope that Huawei\'s association brings more innovative solutions on board for our customers.'
+      name: "Longi",
+      logo: "https://images.seeklogo.com/logo-png/44/1/longi-logo-png_seeklogo-448395.png",
+      nameColor: "text-[#E60012]",
     },
     {
-      name: 'SUNGROW',
-      logo: 'https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg',
-      nameColor: 'text-orange-600',
-      description: 'What\'s better than to be partners with a company that has largest R&D team in the industry. Sungrow is the world\'s most bankable solar inverter brand. Moreover, Sungrow\'s presence in over 150 countries is enough to determine the worth of this company. Indeed, Beyondgreen Solar Solutions\' partnership with Sungrow is a breakthrough for solar energy in Pakistan. Hopefully, it will bring more expertise to the market.'
-    }
+      name: "JA Solar",
+      logo: "https://images.seeklogo.com/logo-png/37/1/ja-solar-logo-png_seeklogo-371198.png",
+      nameColor: "text-[#00479D]",
+    },
+    {
+      name: "SUNGROW",
+      logo: "https://images.seeklogo.com/logo-png/31/1/sungrow-power-supply-logo-png_seeklogo-314265.png?v=1955223241192304344",
+      nameColor: "text-[#F5821F]",
+    },
+    {
+      name: "HUAWEI",
+      logo: "https://images.seeklogo.com/logo-png/6/1/huawei-logo-png_seeklogo-68529.png",
+      nameColor: "text-[#F04A34]",
+    },
+    {
+      name: "Solaredge",
+      logo: "https://images.seeklogo.com/logo-png/36/1/solaredge-logo-png_seeklogo-362415.png",
+      nameColor: "text-[#EF413D]",
+    },
+    {
+      name: "SOFAR",
+      logo: "https://www.sofarsolar.com/upload/image/20230110/1673337158608031140.svg",
+      nameColor: "text-[#366DB0]",
+    },
+    {
+      name: "Solis",
+      logo: "https://cmsdata.solisinverters.com/uploads/image/5bdc2304dbfda.png",
+      nameColor: "text-[#F8980A]",
+    },
+    {
+      name: "GROWATT",
+      logo: "https://en.growatt.com/upload/image/20220724/322171ae39029a00108a80679869c69a.png?raw=logo.png|Transparent%20Background%20Growatt%20Logo",
+      nameColor: "text-[#6EB92B]",
+    },
+    {
+      name: "INVEREX",
+      logo: "https://www.aptinverex.com/assets/img/logo.png",
+      nameColor: "text-[#ED1C24]",
+    },
   ];
 
   return (
     <div className="w-full bg-gray-50">
       <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
-          style={{ 
-            backgroundImage: 'url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg")',
+          style={{
+            backgroundImage:
+              'url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg")',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-gray-900/80"></div>
@@ -65,14 +97,15 @@ const Partners = () => {
               PARTNERS
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto px-4">
-              Collaborating with industry leaders to bring you the best solar solutions
+              Collaborating with industry leaders to bring you the best solar
+              solutions
             </p>
           </motion.div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center text-[#019D4D]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -81,63 +114,54 @@ const Partners = () => {
           Our Trusted Partners
         </motion.h2>
 
-        <div className="space-y-16 md:space-y-24">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {partners.map((partner, index) => (
             <motion.div
               key={partner.name}
-              className="flex flex-col md:flex-row gap-8 md:gap-16 items-center bg-white rounded-2xl shadow-lg p-6 md:p-12"
+              className="break-inside-avoid flex flex-col gap-6 items-center bg-white rounded-2xl shadow-lg p-6"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeIn}
             >
-              <div className="w-full md:w-1/3 lg:w-1/4">
-                <div className="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300">
-                  <img 
+              <div className="w-full">
+                <div className="bg-white p-4 rounded-xl transform hover:scale-105 transition-transform duration-300">
+                  <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
-              <div className="w-full md:w-2/3 lg:w-3/4">
-                <motion.h3 
-                  className={`text-3xl md:text-4xl font-bold mb-6 ${partner.nameColor}`}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2, duration: 0.6 }}
-                >
-                  {partner.name}
-                </motion.h3>
-                <motion.p 
-                  className="text-gray-600 leading-relaxed text-lg"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.6 }}
-                >
-                  {partner.description}
-                </motion.p>
-              </div>
+              <motion.h3
+                className={`text-2xl font-bold text-center ${partner.nameColor}`}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+              >
+                {partner.name}
+              </motion.h3>
             </motion.div>
           ))}
         </div>
       </div>
-      <div className="space-y-8 pt-10 pb-24">
-      <div className="w-full max-w-screen-lg mx-auto flex flex-col items-center space-y-8">
-        <div className="text-center">
-          <h4 className='text-2xl font-bold text-[#252525]'>
-            The best are already here
-          </h4>
-          <a href="https://www.newcult.co" target="_blank">
-            <h1 className='text-6xl font-bold text-[#019D4D]'>Join new cult</h1>
-          </a>
+      {/* <div className="space-y-8 pt-10 pb-24">
+        <div className="w-full max-w-screen-lg mx-auto flex flex-col items-center space-y-8">
+          <div className="text-center">
+            <h4 className="text-2xl font-bold text-[#252525]">
+              The best are already here
+            </h4>
+            <a href="https://www.newcult.co" target="_blank">
+              <h1 className="text-6xl font-bold text-[#019D4D]">
+                Join new cult
+              </h1>
+            </a>
+          </div>
+
+          <LogoCarousel columnCount={3} />
         </div>
- 
-        <LogoCarousel columnCount={3} />
-      </div>
-    </div>
+      </div> */}
     </div>
   );
 };
