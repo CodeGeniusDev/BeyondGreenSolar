@@ -67,7 +67,7 @@ export const NavbarSection: React.FC = () => {
               <span className="block">{item.name}</span>
             </a>
           ))}
-          <Link href="tel:0332-3757694" className="flex w-full flex-col gap-2 pt-2">
+          <Link href="tel:03323757694" className="flex w-full flex-col gap-2 pt-2">
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"

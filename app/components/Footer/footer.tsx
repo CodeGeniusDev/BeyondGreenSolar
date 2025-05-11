@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h2 className="text-2xl font-semibold mb-6">Call Now</h2>
-            <Link href="tel:0332-3757694">
+            <Link href="tel:03323757694">
               <button className="w-full border cursor-pointer border-[#019D4D] text-[#019D4D] py-3 px-6 hover:bg-[#019D4D] hover:text-white transition-colors duration-300">
                 Click Here To Call Now!
               </button>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-hover-card": "^1.1.13",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
