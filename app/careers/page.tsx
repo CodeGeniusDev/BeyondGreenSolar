@@ -1,6 +1,7 @@
 "use client";
+
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Accordion from "@/app/components/ui/Accordion";
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ const Careers: React.FC = () => {
     {
       title: "LONGi",
       content:
-        "Our market partner LONGi needs no introduction to the solar industry, its micro-crystalline technologies, product innovations, and optimization of the power-cost ratio keep it ahead of other competitors. Moreover, the company provides about a quarter of the global market demand for solar modules. Being the world's most valuable company, LONGi's association with Beyondgreen Solar is a big thing for solar in Pakistan. Therefore, being affiliated with LONGi allows us to give replaceable warranties to our customers.",
+        "Our market partner LONGi needs no introduction to the solar industry, its micro-crystalline technologies, product innovations, and optimization of the power-cost ratio keep it ahead of other competitors. Moreover, the company provides about a quarter of the global market demand for solar modules. Being the world's most valuable company, LONGi's association with BeyondGreenSolar is a big thing for solar in Pakistan. Therefore, being affiliated with LONGi allows us to give replaceable warranties to our customers.",
     },
     {
       title: "Growatt",
@@ -24,13 +25,13 @@ const Careers: React.FC = () => {
     {
       title: "Sungrow",
       content:
-        "What's better than to be partners with a company that has the largest R&D team in the industry. Sungrow is the world's most bankable solar inverter brand. Moreover, Sungrow's presence in over 150 countries is enough to determine the worth of this company. Indeed, Beyondgreen Solar Solutions partnership with Sungrow is a breakthrough for solar energy in Pakistan. Hopefully, it will bring expertise to the market.",
+        "What's better than to be partners with a company that has the largest R&D team in the industry. Sungrow is the world's most bankable solar inverter brand. Moreover, Sungrow's presence in over 150 countries is enough to determine the worth of this company. Indeed, BeyondGreenSolar's partnership with Sungrow is a breakthrough for solar energy in Pakistan. Hopefully, it will bring expertise to the market.",
     },
   ];
 
   return (
     <div className="bg-white min-h-screen">
-      <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] w-full overflow-hidden">
+      <div className="relative h-[150px] xs:h-[180px] sm:h-[220px] md:h-[280px] lg:h-[350px] xl:h-[400px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
           style={{
@@ -44,22 +45,63 @@ const Careers: React.FC = () => {
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div
-            className="text-center"
+            className="text-center px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white tracking-wide mb-4">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-wide mb-2 sm:mb-4">
               CAREERS
             </h1>
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl max-w-xl sm:max-w-2xl mx-auto px-4">
-              Join our team to collaborate with industry leaders and drive sustainable solar solutions
+            <p className="text-gray-300 text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl max-w-md xs:max-w-lg sm:max-w-xl md:max-w-2xl mx-auto">
+              Join BeyondGreenSolar to collaborate with industry leaders and
+              drive sustainable solar solutions
             </p>
           </motion.div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl text-[#252525] font-bold text-center mb-4 sm:mb-6">
+            Solar Energy and BeyondGreenSolar
+          </h2>
+          <p className="text-gray-700 text-sm xs:text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-center mb-4 sm:mb-6">
+            Solar energy is a clean, renewable power source that harnesses the
+            sun’s abundant energy to generate electricity, reducing carbon
+            footprints and energy costs. It’s a sustainable solution for a
+            greener future, offering benefits like reduced electricity bills,
+            energy independence, and minimal environmental impact.
+          </p>
+          <p className="text-gray-700 text-sm xs:text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-center mb-4 sm:mb-6">
+            At{" "}
+            <span className="font-semibold text-[#019D4D]">
+              BeyondGreenSolar
+            </span>
+            , we are committed to revolutionizing solar energy in Pakistan. As a
+            leader in solar solutions, we partner with global giants like LONGi,
+            Growatt, Huawei, and Sungrow to bring cutting-edge technology to our
+            customers. Our mission is to make solar energy accessible,
+            affordable, and efficient, empowering communities to embrace
+            sustainable energy.
+          </p>
+          <div className="text-center">
+            <Link
+              href="/about"
+              className="inline-block px-4 py-2 text-sm xs:text-base sm:text-lg text-white bg-[#019D4D] rounded-md hover:bg-[#017B3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#019D4D]"
+            >
+              Learn More About Our Mission
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+
+      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,10 +112,23 @@ const Careers: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
-      <motion.div>
-        <h2 className="text-3xl text-[#252525] font-bold text-center">Send your CVs to <Link href="mailto:careers@beyondgreensolar.com" className="text-[#019D4D] hover:underline">careers@beyondgreensolar.com</Link></h2>
-      </motion.div>
+      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl text-[#252525] font-bold text-center">
+            Send your CVs to{" "}
+            <Link
+              href="mailto:careers@beyondgreensolar.com"
+              className="text-[#019D4D] hover:underline inline-block px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
+            >
+              careers@beyondgreensolar.com
+            </Link>
+          </h2>
+        </motion.div>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function BentoGridDemo() {
+export function BentoGridBox() {
   return (
     <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
@@ -73,7 +73,7 @@ export default function FifthSection() {
           Explore the birth of groundbreaking ideas and inventions.
         </p>
       </div>
-      <BentoGridDemo />
+      <BentoGridBox />
     </div>
   );
 }
