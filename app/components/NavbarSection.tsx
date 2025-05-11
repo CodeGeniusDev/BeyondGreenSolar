@@ -12,6 +12,7 @@ import {
   MobileNavMenu,
 } from "@/app/components/ui/resizable-navbar";
 import React, { useState } from "react";
+import Link from "next/link";
 
 interface NavItem {
   name: string;
@@ -40,9 +41,9 @@ export const NavbarSection: React.FC = () => {
           items={navItems}
           onItemClick={() => setIsMobileMenuOpen(false)}
         />
-        <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+        <Link href="/contact" className="flex items-center gap-3 sm:gap-4 lg:gap-5">
           <NavbarButton variant="primary">Book a call</NavbarButton>
-        </div>
+        </Link>
       </NavBody>
       <MobileNav>
         <MobileNavHeader>
@@ -66,7 +67,7 @@ export const NavbarSection: React.FC = () => {
               <span className="block">{item.name}</span>
             </a>
           ))}
-          <div className="flex w-full flex-col gap-2 pt-2">
+          <Link href="/contact" className="flex w-full flex-col gap-2 pt-2">
             <NavbarButton
               onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"
@@ -74,7 +75,7 @@ export const NavbarSection: React.FC = () => {
             >
               Book a call
             </NavbarButton>
-          </div>
+          </Link>
         </MobileNavMenu>
       </MobileNav>
     </Navbar>

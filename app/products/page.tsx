@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { BentoGrid, BentoGridItem } from "../components/ui/grid";
 import { motion } from "framer-motion";
 import { IconSolarPanel, IconBattery } from "@tabler/icons-react";
+import { BentoGrid, BentoGridItem } from "../components/ui/grid";
 
 interface GridItem {
   title: string;
@@ -16,7 +16,7 @@ interface BentoGridBoxProps {
   items: GridItem[];
 }
 
-export function BentoGridBox({ items }: BentoGridBoxProps) {
+const BentoGridBox: React.FC<BentoGridBoxProps> = ({ items }) => {
   return (
     <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, index) => (
@@ -26,18 +26,14 @@ export function BentoGridBox({ items }: BentoGridBoxProps) {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={index === 3 || index === 6 ? "md:col-span-2" : ""}
+          className={index === 3 || index === 6 ? "md:col-span-2" : undefined}
         />
       ))}
     </BentoGrid>
   );
-}
+};
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
-
-const allItems = [
+const allItems: GridItem[] = [
   {
     title: "JA Solar",
     description: "MONOPERC (565W - 585W)",
@@ -45,9 +41,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/JA-Solar-565W-%E2%80%93-585W.webp"
         alt="JA Solar"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -59,9 +53,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/JinKo-Solar-565W-%E2%80%93-585W.webp"
         alt="Jinko Solar"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -73,9 +65,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/LONGi-Solar-Panel.webp"
         alt="LONGi Solar"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -87,9 +77,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/LONGi-Solar-Bifacial.webp"
         alt="LONGi Solar Bifacial"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -101,9 +89,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/solax-power-inverter.webp"
         alt="Solax Inverter"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -115,9 +101,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/sofar-2.webp"
         alt="Sofar Inverter"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -129,9 +113,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/Sungrow.webp"
         alt="Sungrow Inverter"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -143,9 +125,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/deye2.webp"
         alt="Deye Inverter Hybrid"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconSolarPanel className="h-4 w-4 text-[#019D4D]" />,
@@ -157,9 +137,7 @@ const allItems = [
       <img
         src="https://beyondgreensolar.com/wp-content/uploads/2025/04/Untitled-1.webp"
         alt="SolarMD (Lithium Battery)"
-        className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl object-cover"
-        width={500}
-        height={500}
+        className="w-full h-full min-h-[10rem] rounded-xl object-cover"
       />
     ),
     icon: <IconBattery className="h-4 w-4 text-[#019D4D]" />,
@@ -168,11 +146,12 @@ const allItems = [
 
 const section1Items = allItems.slice(0, 4);
 const section2Items = allItems.slice(4, 8);
-const section3Items = allItems.slice(8, 9);
+const section3Items = allItems.slice(8);
 
 export default function FifthSection() {
   return (
     <>
+      {/* Hero Section */}
       <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
@@ -201,6 +180,7 @@ export default function FifthSection() {
         </div>
       </div>
 
+      {/* Solar Panels Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
@@ -217,6 +197,7 @@ export default function FifthSection() {
         <BentoGridBox items={section1Items} />
       </div>
 
+      {/* Inverter Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
@@ -233,6 +214,7 @@ export default function FifthSection() {
         <BentoGridBox items={section2Items} />
       </div>
 
+      {/* Battery Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
