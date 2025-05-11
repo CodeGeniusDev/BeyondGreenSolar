@@ -180,7 +180,6 @@ export default function FifthSection() {
         </div>
       </div>
 
-      {/* Solar Panels Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
@@ -197,7 +196,6 @@ export default function FifthSection() {
         <BentoGridBox items={section1Items} />
       </div>
 
-      {/* Inverter Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
@@ -214,7 +212,6 @@ export default function FifthSection() {
         <BentoGridBox items={section2Items} />
       </div>
 
-      {/* Battery Section */}
       <div className="py-20 bg-[#ebebeb]">
         <div className="mb-12">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
