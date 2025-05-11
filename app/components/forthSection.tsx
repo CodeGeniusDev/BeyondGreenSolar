@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import TopHeader from './ui/topNavbar'; // Updated import to PascalCase
 import VerticalText from './ui/VerticalText';
@@ -6,15 +7,15 @@ import InfoBox from './ui/infoBox';
 const HeroSection: React.FC = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-gray-900">
-      <div className="absolute inset-0 z-0">
-        <div 
+      <div className="absolute inset-0 z-0 bg-[#ebebeb]">
+        {/* <div 
           className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
           style={{ 
             backgroundImage: 'url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg")',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 to-gray-900/70"></div>
-        </div>
+        </div> */}
       </div>
       
       <VerticalText text="About" />

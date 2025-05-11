@@ -1,0 +1,318 @@
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+      isValid = false;
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // Handle form submission
+      console.log("Form submitted:", formData);
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    // Clear error when user starts typing
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
+  };
+
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const contactInfo = [
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: "Visit Us",
+      details: ["7/146 Street No 9, Block 3, DMCHS,", "Karachi Pakistan."],
+    },
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: "Call Us",
+      details: ["UAN: 0300 0341934", "Landline: 021-34541934"],
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email Us",
+      details: ["info@beyondgreensolar.com"],
+    },
+  ];
+
+  return (
+    <div className="w-full bg-gray-50">
+      <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
+          style={{
+            backgroundImage:
+              'url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg")',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-gray-900/80"></div>
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-wide mb-4">
+              CONTACT US
+            </h1>
+            <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto px-4">
+              Get in touch with us for all your solar energy needs
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+            <motion.div
+              className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+            >
+              <h2 className="text-3xl font-bold mb-8 text-[#019D4D]">
+                Send us a Message
+              </h2>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 rounded-lg border ${
+                      errors.name ? "border-red-500" : "border-gray-300"
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    placeholder="Your name"
+                  />
+                  {errors.name && (
+                    <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 rounded-lg border ${
+                      errors.email ? "border-red-500" : "border-gray-300"
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    placeholder="your@email.com"
+                  />
+                  {errors.email && (
+                    <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 rounded-lg border ${
+                      errors.subject ? "border-red-500" : "border-gray-300"
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    placeholder="How can we help?"
+                  />
+                  {errors.subject && (
+                    <p className="mt-1 text-sm text-red-500">
+                      {errors.subject}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
+                    className={`w-full px-4 py-3 rounded-lg border ${
+                      errors.message ? "border-red-500" : "border-gray-300"
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    placeholder="Your message"
+                  />
+                  {errors.message && (
+                    <p className="mt-1 text-sm text-red-500">
+                      {errors.message}
+                    </p>
+                  )}
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#019D4D] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#016f36] transition-colors duration-300 flex items-center justify-center group"
+                >
+                  Send Message
+                  <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
+              </form>
+            </motion.div>
+
+            <motion.div
+              className="lg:pl-12"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+            >
+              <h2 className="text-3xl font-bold mb-8 text-[#019D4D]">
+                Get in Touch
+              </h2>
+
+              <div className="space-y-8 mb-12">
+                {contactInfo.map((info, index) => (
+                  <motion.div
+                    key={info.title}
+                    className="flex items-start space-x-4"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.2 }}
+                  >
+                    <div className="bg-[#019D4D] p-3 rounded-lg">
+                      <span className="text-white">{info.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                        {info.title}
+                      </h3>
+                      {info.details.map((detail, i) => (
+                        <p key={i} className="text-gray-600">
+                          {detail}
+                        </p>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.5098375318307!2d67.0893!3d24.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzU3LjAiTiA2N8KwMDUnMjEuNSJF!5e0!3m2!1sen!2s!4v1635789012345!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

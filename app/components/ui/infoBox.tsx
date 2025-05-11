@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
 
@@ -17,7 +18,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ title, description }) => {
         <div>
           <Link 
             href="#" 
-            className="text-beyondgreen-600 font-semibold hover:text-beyondgreen-700 transition-colors duration-300 flex items-center group"
+            className="text-[#019D4D] font-semibold hover:text-[#016f36] transition-colors duration-300 flex items-center group"
           >
             Read More 
             <span className="ml-3 transform translate-x-0 transition-transform duration-300 group-hover:translate-x-2">——</span>

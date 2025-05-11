@@ -4,7 +4,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 export function secondSection() {
   return (
-    <div className="flex justify-center items-center h-[100vh] flex-col px-4">
+    <div className="flex justify-center items-center h-[100vh] flex-col px-4 bg-[#ebebeb]">
       <h2 className="text-xl font-bold mb-10 tracking-tight text-[#333333] sm:text-xl md:text-4xl lg:text-4xl">
         SERVICES
       </h2>
