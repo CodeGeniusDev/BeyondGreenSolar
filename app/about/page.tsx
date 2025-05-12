@@ -26,32 +26,32 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="bg-white">
-      <motion.div
-        className="relative h-[200px] sm:h-[250px] md:h-[300px] w-full overflow-hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
+      <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"
           style={{
             backgroundImage:
               'url("https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg")',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 to-gray-900/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-gray-900/80"></div>
         </div>
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center px-4"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide text-center">
-            ABOUT JINNAH EXPERT
-          </h1>
-        </motion.div>
-      </motion.div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-wide mb-4">
+              About Jinnah Expert
+            </h1>
+            <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto px-4">
+              Welcome to our Company
+            </p>
+          </motion.div>
+        </div>
+      </div>
 
       <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-24">
         <motion.div
@@ -223,7 +223,7 @@ const AboutPage: React.FC = () => {
               {isInView && <CountUp end={100} duration={2} />}+
             </motion.p>
             <p className="text-gray-600 mt-2 text-sm sm:text-base md:text-lg">
-            Projects done.
+              Projects done.
             </p>
           </motion.div>
           <motion.div

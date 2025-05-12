@@ -151,7 +151,6 @@ const section3Items = allItems.slice(8);
 export default function FifthSection() {
   return (
     <>
-      {/* Hero Section */}
       <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-[20000ms] hover:scale-110"

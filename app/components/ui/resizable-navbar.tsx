@@ -254,7 +254,7 @@ export const NavbarLogo: React.FC = () => {
         height={40}
         className="rounded-full"
       />
-      <span className="font-medium">BGSolar</span>
+      <span className="font-medium">JESolar</span>
     </Link>
   );
 };
