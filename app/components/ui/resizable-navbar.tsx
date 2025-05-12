@@ -43,7 +43,10 @@ interface MobileNavMenuProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const { scrollY } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -51,7 +54,10 @@ export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   });
 
   return (
-    <motion.div ref={ref} className={cn("sticky inset-x-0 top-0 z-50 w-full", className)}>
+    <motion.div
+      ref={ref}
+      className={cn("sticky inset-x-0 top-0 z-50 w-full", className)}
+    >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(
@@ -64,7 +70,11 @@ export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   );
 };
 
-export const NavBody: React.FC<NavBodyProps> = ({ children, className, visible }) => {
+export const NavBody: React.FC<NavBodyProps> = ({
+  children,
+  className,
+  visible,
+}) => {
   return (
     <motion.div
       animate={{
@@ -93,7 +103,11 @@ export const NavBody: React.FC<NavBodyProps> = ({ children, className, visible }
   );
 };
 
-export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClick }) => {
+export const NavItems: React.FC<NavItemsProps> = ({
+  items,
+  className,
+  onItemClick,
+}) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -110,7 +124,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClic
           href={item.link}
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative font-bold px-2 py-2 text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3 hover:bg-[#019D4D]/10 hover:rounded-lg"
+          className="relative font-bold px-2 py-2 text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3"
         >
           {hovered === idx && (
             <motion.div
@@ -126,7 +140,11 @@ export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClic
   );
 };
 
-export const MobileNav: React.FC<MobileNavProps> = ({ children, className, visible }) => {
+export const MobileNav: React.FC<MobileNavProps> = ({
+  children,
+  className,
+  visible,
+}) => {
   return (
     <motion.div
       animate={{
@@ -157,15 +175,28 @@ export const MobileNav: React.FC<MobileNavProps> = ({ children, className, visib
   );
 };
 
-export const MobileNavHeader: React.FC<MobileNavHeaderProps> = ({ children, className }) => {
+export const MobileNavHeader: React.FC<MobileNavHeaderProps> = ({
+  children,
+  className,
+}) => {
   return (
-    <div className={cn("flex w-full flex-row items-center justify-between px-4 py-2 sm:px-6", className)}>
+    <div
+      className={cn(
+        "flex w-full flex-row items-center justify-between px-4 py-2 sm:px-6",
+        className
+      )}
+    >
       {children}
     </div>
   );
 };
 
-export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({ children, className, isOpen, onClose }) => {
+export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
+  children,
+  className,
+  isOpen,
+  onClose,
+}) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -186,10 +217,10 @@ export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({ children, classNam
   );
 };
 
-export const MobileNavToggle: React.FC<{ isOpen: boolean; onClick: () => void }> = ({
-  isOpen,
-  onClick,
-}) => {
+export const MobileNavToggle: React.FC<{
+  isOpen: boolean;
+  onClick: () => void;
+}> = ({ isOpen, onClick }) => {
   return (
     <button
       onClick={onClick}
@@ -230,7 +261,14 @@ export const NavbarButton: React.FC<{
   className?: string;
   variant?: "primary" | "dark";
   onClick?: () => void;
-}> = ({ href, as: Tag = "a", children, className, variant = "primary", onClick }) => {
+}> = ({
+  href,
+  as: Tag = "a",
+  children,
+  className,
+  variant = "primary",
+  onClick,
+}) => {
   const baseStyles =
     "px-3 py-2 rounded-md text-sm font-bold cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-flex items-center justify-center sm:px-4 focus:outline-none focus:ring-2 focus:ring-[#019D4D]";
 
