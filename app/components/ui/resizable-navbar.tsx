@@ -129,7 +129,7 @@ export const NavItems: React.FC<NavItemsProps> = ({
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-[#019D4D]/10"
+              className="absolute inset-0 h-full w-full rounded-full bg-[#019d4cb6]"
               transition={{ duration: 0.2 }}
             />
           )}
