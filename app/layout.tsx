@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BeyondGreenSolar",
-  description: "BeyondGreenSolar | Solar Panel Manufacturer",
+  title: "Jinnah Solar",
+  description: "Jinnah Solar | Solar Panel Manufacturer",
 };
 
 export default function RootLayout({

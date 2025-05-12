@@ -15,30 +15,25 @@ interface NavbarProps {
   children: React.ReactNode;
   className?: string;
 }
-
 interface NavBodyProps {
   children: React.ReactNode;
   className?: string;
   visible?: boolean;
 }
-
 interface NavItemsProps {
   items: { name: string; link: string }[];
   className?: string;
   onItemClick?: () => void;
 }
-
 interface MobileNavProps {
   children: React.ReactNode;
   className?: string;
   visible?: boolean;
 }
-
 interface MobileNavHeaderProps {
   children: React.ReactNode;
   className?: string;
 }
-
 interface MobileNavMenuProps {
   children: React.ReactNode;
   className?: string;
@@ -48,10 +43,7 @@ interface MobileNavMenuProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
+  const { scrollY } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -59,10 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   });
 
   return (
-    <motion.div
-      ref={ref}
-      className={cn("sticky inset-x-0 top-0 z-50 w-full", className)}
-    >
+    <motion.div ref={ref} className={cn("sticky inset-x-0 top-0 z-50 w-full", className)}>
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(
@@ -75,11 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   );
 };
 
-export const NavBody: React.FC<NavBodyProps> = ({
-  children,
-  className,
-  visible,
-}) => {
+export const NavBody: React.FC<NavBodyProps> = ({ children, className, visible }) => {
   return (
     <motion.div
       animate={{
@@ -98,8 +83,8 @@ export const NavBody: React.FC<NavBodyProps> = ({
         mass: 0.5,
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between bg-transparent px-4 py-3 sm:px-6 xl:flex",
-        visible && "bg-[#333333]/80 dark:bg-[#333333]/80",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between px-4 py-3 sm:px-6 xl:flex",
+        visible && "bg-[#333333]/80",
         className
       )}
     >
@@ -108,18 +93,14 @@ export const NavBody: React.FC<NavBodyProps> = ({
   );
 };
 
-export const NavItems: React.FC<NavItemsProps> = ({
-  items,
-  className,
-  onItemClick,
-}) => {
+export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClick }) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "flex flex-1 flex-row items-center justify-center gap-2 text-sm font-medium text-white dark:text-white sm:gap-3 lg:gap-4 xl:gap-5",
+        "flex flex-1 flex-row items-center justify-center gap-2 text-sm font-medium text-white sm:gap-3 lg:gap-4 xl:gap-5",
         className
       )}
     >
@@ -145,11 +126,7 @@ export const NavItems: React.FC<NavItemsProps> = ({
   );
 };
 
-export const MobileNav: React.FC<MobileNavProps> = ({
-  children,
-  className,
-  visible,
-}) => {
+export const MobileNav: React.FC<MobileNavProps> = ({ children, className, visible }) => {
   return (
     <motion.div
       animate={{
@@ -170,7 +147,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
         mass: 0.5,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full flex-col items-center justify-between bg-transparent py-3 xl:hidden",
+        "relative z-50 mx-auto flex w-full flex-col items-center justify-between py-3 xl:hidden",
         visible && "bg-[#333333]/80",
         className
       )}
@@ -180,28 +157,15 @@ export const MobileNav: React.FC<MobileNavProps> = ({
   );
 };
 
-export const MobileNavHeader: React.FC<MobileNavHeaderProps> = ({
-  children,
-  className,
-}) => {
+export const MobileNavHeader: React.FC<MobileNavHeaderProps> = ({ children, className }) => {
   return (
-    <div
-      className={cn(
-        "flex w-full flex-row items-center justify-between px-4 py-2 sm:px-6",
-        className
-      )}
-    >
+    <div className={cn("flex w-full flex-row items-center justify-between px-4 py-2 sm:px-6", className)}>
       {children}
     </div>
   );
 };
 
-export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
-  children,
-  className,
-  isOpen,
-  onClose,
-}) => {
+export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({ children, className, isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -222,10 +186,10 @@ export const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
   );
 };
 
-export const MobileNavToggle: React.FC<{
-  isOpen: boolean;
-  onClick: () => void;
-}> = ({ isOpen, onClick }) => {
+export const MobileNavToggle: React.FC<{ isOpen: boolean; onClick: () => void }> = ({
+  isOpen,
+  onClick,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -248,7 +212,7 @@ export const NavbarLogo: React.FC = () => {
       className="relative z-20 flex items-center space-x-2 px-2 py-2 text-sm font-normal text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
     >
       <img
-        src="/favicon.ico" // Replace with actual favicon path
+        src="/favicon.ico"
         alt="BeyondGreenSolar"
         width={40}
         height={40}
@@ -271,8 +235,7 @@ export const NavbarButton: React.FC<{
     "px-3 py-2 rounded-md text-sm font-bold cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-flex items-center justify-center sm:px-4 focus:outline-none focus:ring-2 focus:ring-[#019D4D]";
 
   const variantStyles = {
-    primary:
-      "bg-[#019D4D] text-white shadow-md hover:bg-[#017B3A]",
+    primary: "bg-[#019D4D] text-white shadow-md hover:bg-[#017B3A]",
     dark: "bg-[#333333] text-white shadow-md hover:bg-[#222222]",
   };
 
