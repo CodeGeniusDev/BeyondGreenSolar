@@ -110,7 +110,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClic
           href={item.link}
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-2 py-2 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3"
+          className="relative px-2 py-2 text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3"
         >
           {hovered === idx && (
             <motion.div
