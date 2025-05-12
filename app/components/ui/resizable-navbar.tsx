@@ -110,7 +110,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ items, className, onItemClic
           href={item.link}
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-2 py-2 text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3 hover:bg-[#019D4D]/10 hover:rounded-md"
+          className="relative font-bold px-2 py-2 text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3 hover:bg-[#019D4D]/10 hover:rounded-lg"
         >
           {hovered === idx && (
             <motion.div
@@ -218,7 +218,7 @@ export const NavbarLogo: React.FC = () => {
         height={40}
         className="rounded-full"
       />
-      <span className="font-medium text-[#019D4D]">JESolar</span>
+      <span className="font-extrabold text-[#019D4D]">JESolar</span>
     </Link>
   );
 };
