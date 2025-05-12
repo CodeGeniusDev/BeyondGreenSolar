@@ -62,7 +62,7 @@ export const NavbarSection: React.FC = () => {
               key={`mobile-link-${idx}`}
               href={item.link}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="relative w-full py-2 text-base text-white hover:text-[#019D4D] focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
+              className="relative w-full py-2 text-base text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
             >
               <span className="block">{item.name}</span>
             </a>
