@@ -1,7 +1,6 @@
 "use client";
-
 import { cn } from "@/app/lib/utils";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { IconMenu3, IconX } from "@tabler/icons-react";
 import {
   motion,
   AnimatePresence,
@@ -50,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ children, className }) => {
   const [visible, setVisible] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setVisible(latest > 100);
+    setVisible(latest > 10);
   });
 
   return (
@@ -124,12 +123,12 @@ export const NavItems: React.FC<NavItemsProps> = ({
           href={item.link}
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative font-bold px-2 py-2 text-[#019D4D] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3"
+          className="relative font-bold px-2 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md sm:px-3"
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-md bg-[#019d4ce7]"
+              className="absolute inset-0 h-full w-full rounded-md bg-[#019d4c98]"
               transition={{ duration: 0.2 }}
             />
           )}
@@ -228,9 +227,9 @@ export const MobileNavToggle: React.FC<{
       className="p-2 focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
     >
       {isOpen ? (
-        <IconX className="h-6 w-6 text-white" />
+        <IconX className="h-6 w-6 text-white cursor-pointer" />
       ) : (
-        <IconMenu2 className="h-6 w-6 text-white" />
+        <IconMenu3 className="h-6 w-6 text-white cursor-pointer" />
       )}
     </button>
   );
@@ -249,7 +248,7 @@ export const NavbarLogo: React.FC = () => {
         height={40}
         className="rounded-full"
       />
-      <span className="font-extrabold text-[#019D4D]">JESolar</span>
+      <span className="font-extrabold text-white">JESolar</span>
     </Link>
   );
 };
