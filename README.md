@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JESolar – Jinnah Xpert (Private) Limited ☀️
 
-## Getting Started
+**Website:** [www.jesolar.netlify.app](https://www.jesolar.netlify.app)  
+**Location:** Pakistan  
+**Industry:** Renewable Energy | Solar Power Solutions
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 About JESolar
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Jinnah Xpert (Private) Limited** is a premier provider of end-to-end solar energy solutions tailored for residential, commercial, and industrial sectors across Pakistan. At JESolar, our mission is to lead the transition toward a greener and more sustainable future.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We specialize in delivering cost-effective, high-quality solar installations and energy-efficient systems by adhering to global best practices in Installation and Commissioning for Tier-1 PV solar projects.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌞 Our Core Offerings
 
-To learn more about Next.js, take a look at the following resources:
+- Grid-connected and hybrid solar solutions  
+- Residential, commercial, and industrial-scale solar panel installations  
+- Energy-efficient systems tailored to your needs  
+- Sustainable power integration with advanced technologies  
+- End-to-end support — from consultation to commissioning
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌍 Why Choose JESolar?
 
-## Deploy on Vercel
+- ✅ Tier-1 solar components & technology  
+- ✅ Professional engineering & project management  
+- ✅ Seamless after-sales service & monitoring  
+- ✅ Dedication to eco-conscious growth  
+- ✅ Your trusted partner for a **greener Pakistan**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Contact Us
+
+**📍 Office:** Lahore, Pakistan  
+**📧 Email:** care@jinnahexpert.com  
+**🌐 Website:** [www.jesolar.netlify.app](https://www.jesolar.netlify.app)
+
+---
+
+## 👨‍💻 Developed By
+
+Crafted with passion by **[CodeGenius.Dev](https://portfolio.triplealpha.blog)**  
+🔗 Fiverr: [fiverr.com/abdullah_abaad](https://www.fiverr.com/abdullah_abaad)
+
+---
+
+> *Join hands with JESolar and take your first step towards clean, sustainable energy. Power your future with the sun!*
