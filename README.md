@@ -37,7 +37,7 @@ We specialize in delivering cost-effective, high-quality solar installations and
 ## 📞 Contact Us
 
 **📍 Office:** Lahore, Pakistan  
-**📧 Email:** care@jinnahexpert.com  
+**📧 Email:** [care@jinnahexpert.com](mailto:care@jinnahexpert.com)  
 **🌐 Website:** [www.jesolar.netlify.app](https://www.jesolar.netlify.app)
 
 ---
