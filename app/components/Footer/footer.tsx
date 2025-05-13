@@ -2,6 +2,7 @@
 import React from "react";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
+import { span } from "framer-motion/client";
 
 const Footer: React.FC = () => {
   return (
@@ -9,7 +10,16 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Jinnah Expert</h2>
+            <Link href="/" className="flex mb-6">
+              <div className="flex justify-center items-center gap-4">
+                <img
+                  className="w-20 h-20 rounded-full"
+                  src="../../favicon.ico"
+                  alt="logo"
+                />
+                <h2 className="text-2xl font-semibold">Jinnah Expert</h2>
+              </div>
+            </Link>
             <div className="space-y-3 text-gray-400">
               <p>
                 Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road Gulshan
@@ -54,6 +64,14 @@ const Footer: React.FC = () => {
                 Click Here To Call Now!
               </button>
             </Link>
+            <div className="flex flex-col space-y-3 text-gray-400 mt-6">
+              <Link href="/privacy-policy">
+                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">PRIVACY POLICY</span>
+              </Link>
+              <Link href="/terms-conditions">
+                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">TERMS & CONDITIONS</span>
+              </Link>
+            </div>
           </div>
         </div>
 
