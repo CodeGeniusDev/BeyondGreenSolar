@@ -29,8 +29,41 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Iubenda Cookie Solution */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _iub = _iub || [];
+              _iub.csConfiguration = {
+                siteId: 4031420,
+                cookiePolicyId: 17708919,
+                lang: "en",
+                storage: { useSiteId: true }
+              };
+            `,
+          }}
+        />
+        <script
+          type="text/javascript"
+          src="https://cs.iubenda.com/autoblocking/4031420.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="//cdn.iubenda.com/cs/gpp/stub.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="//cdn.iubenda.com/cs/iubenda_cs.js"
+          charSet="UTF-8"
+          async
+        ></script>
+
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQGN7YD88N"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CQGN7YD88N"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
