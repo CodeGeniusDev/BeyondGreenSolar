@@ -26,10 +26,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
-      >
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQGN7YD88N"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CQGN7YD88N');
+            `,
+          }}
+        />
+      </head>
+      <body className="antialiased overflow-x-hidden">
         <NavbarSection />
         {children}
         <Footer />
