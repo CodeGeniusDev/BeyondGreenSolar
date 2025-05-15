@@ -1,6 +1,6 @@
 # JESolar – Jinnah Xpert (Private) Limited ☀️
 
-**Website:** [www.jesolar.netlify.app](https://www.jesolar.netlify.app)  
+**Website:** [jesolar.netlify.app](https://jesolar.netlify.app)  
 **Location:** Pakistan  
 **Industry:** Renewable Energy | Solar Power Solutions
 
@@ -38,7 +38,7 @@ We specialize in delivering cost-effective, high-quality solar installations and
 
 **📍 Office:** Lahore, Pakistan  
 **📧 Email:** [care@jinnahexpert.com](mailto:care@jinnahexpert.com)  
-**🌐 Website:** [www.jesolar.netlify.app](https://www.jesolar.netlify.app)
+**🌐 Website:** [jesolar.netlify.app](https://jesolar.netlify.app)
 
 ---
 
