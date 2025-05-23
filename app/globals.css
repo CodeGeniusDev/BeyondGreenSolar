@@ -5,6 +5,11 @@
   --foreground: #171717;
 }
 
+::selection {
+  background-color: #019d4d;
+  color: #000000;
+}
+
 @theme inline {
   --animate-aurora: aurora 60s linear infinite;
   @keyframes aurora {

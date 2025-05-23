@@ -10,12 +10,12 @@ export function secondSection() {
       </h2>
       <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
         We offer{" "}
-        <LinkPreview url="https://beyondgreensolar.com" className="font-bold">
+        <LinkPreview url="https://jesolar.netlify.app/blogs" className="font-bold">
           <span className="text-[#019D4D]">
             Residential, Commercial & Industrial,
           </span>
         </LinkPreview>{" "}
-        <LinkPreview url="https://beyondgreensolar.com" className="font-bold">
+        <LinkPreview url="https://jesolar.netlify.app/blogs" className="font-bold">
           <span className="text-[#019D4D]">Agriculture Solar Solutions</span>
         </LinkPreview>{" "}
         tailored to your needs. Our systems also include Without Grid Backup
@@ -28,7 +28,7 @@ export function secondSection() {
       </p>
       <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto">
         Visit{" "}
-        <LinkPreview url="https://jinnahexpert.com" className="font-bold">
+        <LinkPreview url="https://jesolar.netlify.app" className="font-bold">
           <span className="text-[#019D4D]">Jinnah Expert</span>
         </LinkPreview>{" "}
         for more information.

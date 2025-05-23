@@ -3,6 +3,7 @@ import React from "react";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 import { span } from "framer-motion/client";
+import { LinkPreview } from "../ui/link-preview";
 
 const Footer: React.FC = () => {
   return (
@@ -66,34 +67,40 @@ const Footer: React.FC = () => {
             </Link>
             <div className="flex flex-col space-y-3 text-gray-400 mt-6">
               <Link href="/privacy-policy">
-                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">PRIVACY POLICY</span>
+                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">
+                  PRIVACY POLICY
+                </span>
               </Link>
               <Link href="/terms-conditions">
-                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">TERMS & CONDITIONS</span>
+                <span className="font-medium text-[#019D4D] cursor-pointer hover:text-white hover:underline">
+                  TERMS & CONDITIONS
+                </span>
               </Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
+          <div className="text-gray-400 text-sm">
             © 2025{" "}
-            <Link href="/" className="text-[#019D4D] hover:underline">
-              Jinnah Expert
-            </Link>{" "}
-            All Rights Reserved.
-          </p>
-          <p className="text-gray-400 text-sm">
-            Developed by{" "}
-            <Link
-              href="https://www.portfolio.triplealpha.blog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#019D4D] hover:underline"
+            <LinkPreview
+              url="https://jesolar.netlify.app"
+              className="font-bold"
             >
-              CodeGenius.Dev
-            </Link>
-          </p>
+              <span className="text-[#019D4D]">Jinnah Expert</span>
+            </LinkPreview>{" "}
+            All Rights Reserved.
+          </div>
+          <div className="text-gray-400 text-sm">
+            Developed by{" "}
+            <LinkPreview
+              url="https://portfolio.triplealpha.blog"
+              className="font-bold"
+            >
+              <span className="text-[#019D4D]">CodeGenius.Dev</span>
+            </LinkPreview>
+            {" "}with ❤️
+          </div>
           <div className="flex space-x-6">
             <a
               href="https://www.facebook.com/jinnahexpert"
