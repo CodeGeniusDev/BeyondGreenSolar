@@ -528,14 +528,14 @@ const blogPosts: BlogPost[] = [
   },
 ];
 
-const BlogPostPage = ({ params }: { params: { slug: string } }) => {
+const BlogPostPage = () => {
+  const params = useParams();
+  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug || '';
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState<Comment[]>([]);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [charCount, setCharCount] = useState(0);
   const maxChars = 500;
-
-  const { slug } = useParams<{ slug: string }>();
 
   useEffect(() => {
     const savedComments = localStorage.getItem(`blogComments_${slug}`);
