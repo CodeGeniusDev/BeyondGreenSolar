@@ -59,7 +59,7 @@ const Careers: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+      <div className="container mx-auto px-8 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ const Careers: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+      <div className="container mx-auto px-8 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -110,7 +110,7 @@ const Careers: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-4 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+      <div className="container mx-auto px-8 xs:px-6 sm:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -64,12 +64,12 @@ const AboutPage: React.FC = () => {
           }}
         >
           <motion.div className="w-full md:w-1/3 relative" variants={fadeInUp}>
-            <div className="bg-[#019D4D] p-6 mr-10 sm:p-8 text-white relative">
+            <div className="bg-[#019D4D] p-6 sm:p-8 text-white relative px-6">
               <div className="flex flex-col justify-center items-center gap-2 py-8 sm:py-10 px-4 sm:px-6">
                 <h4 className="text-xs sm:text-sm text-center uppercase tracking-wider">
                   ABOUT JINNAH EXPERT
                 </h4>
-                <h1 className="text-xl sm:text-2xl md:text-[2.2rem] font-bold text-white text-center">
+                <h1 className="text-2xl sm:text-2xl md:text-[2.2rem] font-bold text-white text-center">
                   Welcome to our Company
                 </h1>
               </div>
@@ -81,7 +81,7 @@ const AboutPage: React.FC = () => {
             </div>
           </motion.div>
           <motion.div
-            className="w-full md:w-2/3 mt-12 md:mt-0"
+            className="w-full md:w-2/3 mt-12 md:mt-0 px-6"
             variants={fadeInUp}
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4">
@@ -108,7 +108,7 @@ const AboutPage: React.FC = () => {
       </div>
 
       <div
-        className="container mx-auto px-4 py-8 sm:py-12 md:py-16"
+        className="container mx-auto px-6 py-8 sm:py-12 md:py-16"
         ref={achievementsRef}
       >
         <motion.div

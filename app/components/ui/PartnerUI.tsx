@@ -58,7 +58,7 @@ interface LogoColumnProps {
  
 // LogoColumn component: Displays a single column of animated logos
 const LogoColumn: React.FC<LogoColumnProps> = React.memo(
-  ({ logos, index, currentTime }) => {
+  function LogoColumn({ logos, index, currentTime }) {
     const cycleInterval = 2000 // Time each logo is displayed (in milliseconds)
     const columnDelay = index * 200 // Stagger the start of each column's animation
     // Calculate which logo should be displayed based on the current time
@@ -125,6 +125,7 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
     )
   }
 )
+LogoColumn.displayName = 'LogoColumn'
  
 // Main LogoCarousel component
 function LogoCarousel({ columnCount = 2 }: { columnCount?: number }) {
@@ -156,7 +157,7 @@ function LogoCarousel({ columnCount = 2 }: { columnCount?: number }) {
   useEffect(() => {
     const distributedLogos = distributeLogos(allLogos, columnCount)
     setLogoSets(distributedLogos)
-  }, [allLogos])
+  }, [allLogos, columnCount])
  
   // Function to update the current time (used for logo cycling)
   const updateTime = useCallback(() => {

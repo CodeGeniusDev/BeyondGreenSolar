@@ -180,7 +180,7 @@ export default function FifthSection() {
       </div>
 
       <div className="py-20 bg-[#ebebeb]">
-        <div className="mb-12">
+        <div className="mb-12 px-8">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
             Latest <span className="text-[#019D4D]">Solar Technologies</span>
           </h4>
@@ -196,7 +196,7 @@ export default function FifthSection() {
       </div>
 
       <div className="py-20 bg-[#ebebeb]">
-        <div className="mb-12">
+        <div className="mb-12 px-8">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
             Latest <span className="text-[#019D4D]">Inverter Technologies</span>
           </h4>
@@ -212,7 +212,7 @@ export default function FifthSection() {
       </div>
 
       <div className="py-20 bg-[#ebebeb]">
-        <div className="mb-12">
+        <div className="mb-12 px-8">
           <h4 className="text-center text-sm pb-4 font-bold text-[#333333]">
             Latest{" "}
             <span className="text-[#019D4D]">Batteries Technologies</span>

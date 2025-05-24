@@ -114,7 +114,7 @@ const ProjectsPage = () => {
       </div>
 
       <div className="py-20 bg-[#ebebeb]">
-        <div className="mb-12 bg-[#ebebeb]">
+        <div className="mb-12 px-8 container mx-auto">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
