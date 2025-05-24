@@ -54,13 +54,51 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (validateForm()) {
-      // Handle form submission
-      console.log("Form submitted:", formData);
+ const [isSubmitting, setIsSubmitting] = useState(false);
+const [submitStatus, setSubmitStatus] = useState<{
+  success: boolean;
+  message: string;
+} | null>(null);
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  if (!validateForm()) return;
+  
+  setIsSubmitting(true);
+  setSubmitStatus(null);
+  
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    
+    if (response.ok) {
+      setSubmitStatus({ success: true, message: 'Message sent successfully!' });
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } else {
+      throw new Error(data.message || 'Failed to send message');
     }
-  };
+  } catch (error) {
+    setSubmitStatus({
+      success: false,
+      message: error instanceof Error ? error.message : 'An unexpected error occurred',
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
