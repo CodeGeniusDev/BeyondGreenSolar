@@ -4,6 +4,7 @@ import { NavbarSection } from "./components/NavbarSection";
 import Footer from "./components/Footer/footer";
 import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
+import './globals.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
