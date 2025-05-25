@@ -17,16 +17,78 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jinnah Solar",
-  description: "Jinnah Solar | Solar Panel Manufacturer",
-  keywords: ["solar panels", "renewable energy", "Jinnah Solar"],
+  title: "Jinnah Expert Solar | Leading Solar Panel Manufacturer in Pakistan",
+  description: "Jinnah Expert Solar: Pakistan's top solar panel manufacturer offering high-efficiency solar solutions for homes and businesses. Contact us to go solar today!",
+  keywords: [
+    "solar panels Pakistan",
+    "solar panel manufacturer Pakistan",
+    "Jinnah Expert Solar",
+    "Jinnah Solar",
+    "renewable energy Pakistan",
+    "solar energy solutions Karachi",
+    "sustainable energy systems",
+    "solar power for homes",
+    "solar power for businesses",
+    "solar energy Karachi",
+    "jinnahexpert.com"
+  ],
+  authors: [{ name: "Jinnah Expert Solar Team", url: "https://jinnahexpert.com" }],
+  robots: "index, follow, max-image-preview:large, max-snippet:-1",
+  viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "Jinnah Solar",
-    description: "Leading Solar Panel Manufacturer",
-    url: "https://jinnahsolar.com",
-    siteName: "Jinnah Solar",
-    images: ["/favicon.ico"],
+    title: "Jinnah Expert Solar | Premier Solar Panel Manufacturer in Pakistan",
+    description: "Switch to sustainable energy with Jinnah Expert Solar! High-quality solar panels for homes and businesses in Pakistan. Contact us for a greener future!",
+    url: "https://jinnahexpert.com",
+    siteName: "Jinnah Expert Solar",
+    images: [
+      {
+        url: "https://jinnahexpert.com/image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jinnah Expert Solar Panels - High-Efficiency Solar Solutions",
+      },
+    ],
+    locale: "en_PK",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://jinnahexpert.com",
+    languages: {
+      "en-PK": "https://jinnahexpert.com/en-pk",
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Jinnah Expert Solar",
+      "url": "https://jinnahexpert.com",
+      "logo": "https://jinnahexpert.com/favicon.ico",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92332-3757694",
+        "contactType": "Customer Service",
+        "areaServed": "PK",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road",
+        "addressLocality": "Gulshan e Jamal, Karachi",
+        "postalCode": "75260",
+        "addressCountry": "PK"
+      },
+      "sameAs": [
+        "https://www.facebook.com/jinnahexpert",
+        "https://www.instagram.com/jinnahexpert",
+        "https://www.linkedin.com/company/jinnahexpert"
+      ]
+    }),
   },
 };
 
@@ -39,7 +101,6 @@ export default function RootLayout({
     <html lang="en" dir="ltr" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* Iubenda Cookie Solution */}
         <Script
           id="iubenda-cs-configuration"
           dangerouslySetInnerHTML={{
@@ -71,7 +132,6 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
 
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CQGN7YD88N"
           strategy="afterInteractive"
@@ -89,7 +149,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Microsoft Clarity */}
         <Script
           type="text/javascript"
           src="https://www.clarity.ms/tag/rojyflares"

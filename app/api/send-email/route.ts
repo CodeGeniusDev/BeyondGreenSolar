@@ -5,7 +5,6 @@ export async function POST(request: Request) {
   try {
     const { name, email, phone, subject, message } = await request.json();
 
-    // Validate input
     if (!name || !email || !phone || !subject || !message) {
       return NextResponse.json(
         { error: 'Missing required fields', fields: { name, email, phone, subject, message } },
@@ -13,7 +12,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Create transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -24,10 +22,8 @@ export async function POST(request: Request) {
       logger: process.env.NODE_ENV === 'development',
     });
 
-    // Verify transporter connection
     await transporter.verify();
 
-    // Send email
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.RECEIVING_EMAIL || 'codegenius.inc@gmail.com',

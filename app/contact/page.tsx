@@ -91,7 +91,7 @@ const Contact = () => {
       const data = await response.json();
       
       if (response.ok) {
-        setSubmitStatus({ success: true, message: 'Message sent successfully!' });
+        setSubmitStatus({ success: true, message: 'Message sent successfully. ✅' });
         setFormData({
           name: "",
           email: "",
@@ -99,6 +99,10 @@ const Contact = () => {
           subject: "",
           message: "",
         });
+        // Clear the success message after 3 seconds
+        setTimeout(() => {
+          setSubmitStatus(null);
+        }, 3000);
       } else {
         throw new Error(data.message || 'Failed to send message');
       }
@@ -265,7 +269,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.phone ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D]1 focus:border-transparent transition-colors duration-200`}
                     placeholder="Your phone number"
                   />
                   {errors.phone && (
@@ -330,6 +334,11 @@ const Contact = () => {
                   Send Message
                   <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
+                {submitStatus && (
+                  <p className={`mt-4 text-center ${submitStatus.success ? 'text-green-600' : 'text-red-500'}`}>
+                    {submitStatus.message}
+                  </p>
+                )}
               </form>
             </motion.div>
 
