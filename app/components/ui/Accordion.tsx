@@ -24,7 +24,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
         <div key={index} className="border-b border-gray-200 last:border-b-0">
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full text-left py-4 text-lg sm:text-xl font-medium text-gray-800 hover:text-[#019D4D] focus:outline-none flex justify-between items-center"
+            className="w-full text-left py-4 text-lg sm:text-xl font-medium text-gray-800 hover:text-[#019D4D] focus:outline-none flex justify-between items-center cursor-pointer"
           >
             {item.title}
             <span>{activeIndex === index ? "−" : "+"}</span>

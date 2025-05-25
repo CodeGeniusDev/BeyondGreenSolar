@@ -98,14 +98,14 @@ const Testimonials: React.FC = () => {
             <div className="flex justify-center gap-4">
               <button 
                 onClick={handlePrevious}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-white transition-all hover:scale-105 hover:bg-green-700 sm:h-12 sm:w-12"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-white transition-all hover:scale-105 hover:bg-green-700 sm:h-12 sm:w-12 cursor-pointer"
                 aria-label="Previous testimonial"
               >
                 <ArrowLeft className="h-5 w-5 sm:h-6 sm:w-6" />
               </button>
               <button 
                 onClick={handleNext}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-white transition-all hover:scale-105 hover:bg-green-700 sm:h-12 sm:w-12"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-white transition-all hover:scale-105 hover:bg-green-700 sm:h-12 sm:w-12 cursor-pointer"
                 aria-label="Next testimonial"
               >
                 <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />

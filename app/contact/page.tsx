@@ -7,6 +7,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -14,6 +15,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -23,6 +25,7 @@ const Contact = () => {
     const newErrors = {
       name: "",
       email: "",
+      phone: "",
       subject: "",
       message: "",
     };
@@ -40,6 +43,14 @@ const Contact = () => {
       isValid = false;
     }
 
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+      isValid = false;
+    } else if (!/^\+?[\d\s-]{10,}$/.test(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
+      isValid = false;
+    }
+
     if (!formData.subject.trim()) {
       newErrors.subject = "Subject is required";
       isValid = false;
@@ -54,51 +65,52 @@ const Contact = () => {
     return isValid;
   };
 
- const [isSubmitting, setIsSubmitting] = useState(false);
-const [submitStatus, setSubmitStatus] = useState<{
-  success: boolean;
-  message: string;
-} | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  
-  if (!validateForm()) return;
-  
-  setIsSubmitting(true);
-  setSubmitStatus(null);
-  
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await response.json();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     
-    if (response.ok) {
-      setSubmitStatus({ success: true, message: 'Message sent successfully!' });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+    if (!validateForm()) return;
+    
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    } else {
-      throw new Error(data.message || 'Failed to send message');
+
+      const data = await response.json();
+      
+      if (response.ok) {
+        setSubmitStatus({ success: true, message: 'Message sent successfully!' });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error(data.message || 'Failed to send message');
+      }
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: error instanceof Error ? error.message : 'An unexpected error occurred',
+      });
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    setSubmitStatus({
-      success: false,
-      message: error instanceof Error ? error.message : 'An unexpected error occurred',
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -240,6 +252,29 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                 <div>
                   <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 rounded-lg border ${
+                      errors.phone ? "border-red-500" : "border-gray-300"
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    placeholder="Your phone number"
+                  />
+                  {errors.phone && (
+                    <p className="mt-1 text-sm text-red-500">{errors.phone}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label
                     htmlFor="subject"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
@@ -253,7 +288,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     onChange={handleChange}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.subject ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D]1 focus:border-transparent transition-colors duration-200`}
                     placeholder="How can we help?"
                   />
                   {errors.subject && (
@@ -290,7 +325,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#019D4D] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#016f36] transition-colors duration-300 flex items-center justify-center group"
+                  className="w-full bg-[#019D4D] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#016f36] transition-colors duration-300 flex items-center justify-center group cursor-pointer"
                 >
                   Send Message
                   <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />

@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
           <div className="text-gray-400 text-sm">
             © 2025{" "}
             <LinkPreview
-              url="https://jesolar.netlify.app"
+              url="https:///jinnahexpert.com"
               className="font-bold"
             >
               <span className="text-[#019D4D]">Jinnah Expert</span>
