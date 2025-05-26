@@ -7,7 +7,13 @@ export const metadata = {
   title: "Solar Insights Blog - Latest Solar News",
   description: "Explore the latest in solar technology, installation tips, and energy savings.",
   keywords: "solar technology, installation tips, energy savings, solar blog",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function BlogLayout({

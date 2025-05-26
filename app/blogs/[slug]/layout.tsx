@@ -94,7 +94,6 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       title: 'Post Not Found - Solar Insights Blog',
       description: 'The requested blog post could not be found.',
       keywords: 'solar, blog, not found',
-      viewport: 'width=device-width, initial-scale=1',
     };
   }
 
@@ -102,9 +101,15 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     title: `${post.title} - Solar Insights Blog`,
     description: post.excerpt,
     keywords: `${post.category}, solar, ${post.title}`,
-    viewport: 'width=device-width, initial-scale=1',
   };
 }
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export default async function BlogPostLayout({ children, params }: LayoutProps) {
   const { slug } = await params;

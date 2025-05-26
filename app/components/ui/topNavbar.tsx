@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
             href="/" 
             className="text-white text-2xl font-semibold tracking-wide hover:opacity-90 transition-opacity duration-300"
           >
-            About Jinnah Expert
+            About Jinnah Xpert
           </Link>
         </div>
       </div>

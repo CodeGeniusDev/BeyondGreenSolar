@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jinnah Expert Solar | Leading Solar Panel Manufacturer in Pakistan",
+  title: "Jinnah Xpert Solar | Leading Solar Panel Manufacturer in Pakistan",
   description:
-    "Jinnah Expert Solar: Pakistan's top solar panel manufacturer offering high-efficiency solar solutions for homes and businesses. Contact us to go solar today!",
+    "Jinnah Xpert Solar: Pakistan's top solar panel manufacturer offering high-efficiency solar solutions for homes and businesses. Contact us to go solar today!",
   keywords: [
     "solar panels Pakistan",
     "solar panel manufacturer Pakistan",
-    "Jinnah Expert Solar",
+    "Jinnah Xpert Solar",
     "Jinnah Solar",
     "renewable energy Pakistan",
     "solar energy solutions Karachi",
@@ -34,22 +34,22 @@ export const metadata: Metadata = {
     "jinnahexpert.com",
   ],
   authors: [
-    { name: "Jinnah Expert Solar Team", url: "https://jinnahexpert.com" },
+    { name: "Jinnah Xpert Solar Team", url: "https://jinnahexpert.com" },
   ],
   robots: "index, follow, max-image-preview:large, max-snippet:-1",
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "Jinnah Expert Solar | Premier Solar Panel Manufacturer in Pakistan",
+    title: "Jinnah Xpert Solar | Premier Solar Panel Manufacturer in Pakistan",
     description:
-      "Switch to sustainable energy with Jinnah Expert Solar! High-quality solar panels for homes and businesses in Pakistan. Contact us for a greener future!",
+      "Switch to sustainable energy with Jinnah Xpert Solar! High-quality solar panels for homes and businesses in Pakistan. Contact us for a greener future!",
     url: "https://jinnahexpert.com",
-    siteName: "Jinnah Expert Solar",
+    siteName: "Jinnah Xpert Solar",
     images: [
       {
         url: "https://jinnahexpert.com/image.jpg",
         width: 1200,
         height: 630,
-        alt: "Jinnah Expert Solar Panels - High-Efficiency Solar Solutions",
+        alt: "Jinnah Xpert Solar Panels - High-Efficiency Solar Solutions",
       },
     ],
     locale: "en_PK",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "Jinnah Expert Solar",
+      name: "Jinnah Xpert Solar",
       url: "https://jinnahexpert.com",
       logo: "https://jinnahexpert.com/favicon.ico",
       contactPoint: {
@@ -95,6 +95,13 @@ export const metadata: Metadata = {
       ],
     }),
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

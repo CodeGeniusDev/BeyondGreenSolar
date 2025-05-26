@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import OfficeTabs from "../components/TabComponent";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,25 +74,28 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
     setSubmitStatus(null);
-    
+
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       const data = await response.json();
-      
+
       if (response.ok) {
-        setSubmitStatus({ success: true, message: 'Message sent successfully. ✅' });
+        setSubmitStatus({
+          success: true,
+          message: "Message sent successfully. ✅",
+        });
         setFormData({
           name: "",
           email: "",
@@ -99,17 +103,19 @@ const Contact = () => {
           subject: "",
           message: "",
         });
-        // Clear the success message after 3 seconds
         setTimeout(() => {
           setSubmitStatus(null);
         }, 3000);
       } else {
-        throw new Error(data.message || 'Failed to send message');
+        throw new Error(data.message || "Failed to send message. ❌");
       }
     } catch (error) {
       setSubmitStatus({
         success: false,
-        message: error instanceof Error ? error.message : 'An unexpected error occurred',
+        message:
+          error instanceof Error
+            ? error.message
+            : "An unexpected error occurred",
       });
     } finally {
       setIsSubmitting(false);
@@ -124,7 +130,6 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
-    // Clear error when user starts typing
     if (errors[name as keyof typeof errors]) {
       setErrors((prev) => ({
         ...prev,
@@ -146,22 +151,22 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Visit Us",
-      details: [
-        "Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road Gulshan e Jamal Karachi, 75260.",
-      ],
-    },
+    // {
+    //   icon: <MapPin className="w-6 h-6" />,
+    //   title: "Visit Us",
+    //   details: [
+    //     "Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road Gulshan e Jamal Karachi, 75260.",
+    //   ],
+    // },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: ["UAN: 0332-3757694", "Landline: 021-34685110"],
+      details: ["UAN: 0333-8211195", "Landline: 021-34572065,", "021-34685110"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["care@jinnahexpert.com"],
+      details: ["info@jinnahexpert.com"],
     },
   ];
 
@@ -211,7 +216,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-bold text-gray-700 mb-1"
                   >
                     Name
                   </label>
@@ -221,20 +226,26 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    disabled={isSubmitting}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.name ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
                     placeholder="Your name"
+                    required
+                    aria-invalid={errors.name ? "true" : "false"}
+                    aria-describedby={errors.name ? "name-error" : undefined}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+                    <p id="name-error" className="mt-1 text-sm text-red-500">
+                      {errors.name}
+                    </p>
                   )}
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-bold text-gray-700 mb-1"
                   >
                     Email
                   </label>
@@ -244,20 +255,26 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    disabled={isSubmitting}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.email ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
                     placeholder="your@email.com"
+                    required
+                    aria-invalid={errors.email ? "true" : "false"}
+                    aria-describedby={errors.email ? "email-error" : undefined}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                    <p id="email-error" className="mt-1 text-sm text-red-500">
+                      {errors.email}
+                    </p>
                   )}
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-bold text-gray-700 mb-1"
                   >
                     Phone Number
                   </label>
@@ -267,20 +284,26 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    disabled={isSubmitting}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.phone ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D]1 focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
                     placeholder="Your phone number"
+                    required
+                    aria-invalid={errors.phone ? "true" : "false"}
+                    aria-describedby={errors.phone ? "phone-error" : undefined}
                   />
                   {errors.phone && (
-                    <p className="mt-1 text-sm text-red-500">{errors.phone}</p>
+                    <p id="phone-error" className="mt-1 text-sm text-red-500">
+                      {errors.phone}
+                    </p>
                   )}
                 </div>
 
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-bold text-gray-700 mb-1"
                   >
                     Subject
                   </label>
@@ -290,13 +313,19 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
+                    disabled={isSubmitting}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.subject ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D]1 focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
                     placeholder="How can we help?"
+                    required
+                    aria-invalid={errors.subject ? "true" : "false"}
+                    aria-describedby={
+                      errors.subject ? "subject-error" : undefined
+                    }
                   />
                   {errors.subject && (
-                    <p className="mt-1 text-sm text-red-500">
+                    <p id="subject-error" className="mt-1 text-sm text-red-500">
                       {errors.subject}
                     </p>
                   )}
@@ -305,7 +334,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+                    className="block text-sm font-bold text-gray-700 mb-1"
                   >
                     Message
                   </label>
@@ -314,14 +343,20 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
+                    disabled={isSubmitting}
                     rows={4}
                     className={`w-full px-4 py-3 rounded-lg border ${
                       errors.message ? "border-red-500" : "border-gray-300"
-                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200`}
+                    } focus:outline-none text-[#333333] focus:ring-2 focus:ring-[#019D4D] focus:border-transparent transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
                     placeholder="Your message"
+                    required
+                    aria-invalid={errors.message ? "true" : "false"}
+                    aria-describedby={
+                      errors.message ? "message-error" : undefined
+                    }
                   />
                   {errors.message && (
-                    <p className="mt-1 text-sm text-red-500">
+                    <p id="message-error" className="mt-1 text-sm text-red-500">
                       {errors.message}
                     </p>
                   )}
@@ -329,13 +364,30 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#019D4D] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#016f36] transition-colors duration-300 flex items-center justify-center group cursor-pointer"
+                  disabled={isSubmitting}
+                  className={`w-full bg-[#019D4D] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#016f36] transition-colors duration-300 flex items-center justify-center group ${
+                    isSubmitting
+                      ? "opacity-50 cursor-not-allowed"
+                      : "cursor-pointer"
+                  }`}
+                  aria-label="Send message"
                 >
-                  Send Message
-                  <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  {isSubmitting ? (
+                    "Sending..."
+                  ) : (
+                    <>
+                      Send Message
+                      <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+                    </>
+                  )}
                 </button>
                 {submitStatus && (
-                  <p className={`mt-4 text-center ${submitStatus.success ? 'text-green-600' : 'text-red-500'}`}>
+                  <p
+                    className={`mt-4 text-center ${
+                      submitStatus.success ? "text-green-600" : "text-red-500"
+                    }`}
+                    role="alert"
+                  >
                     {submitStatus.message}
                   </p>
                 )}
@@ -349,6 +401,7 @@ const Contact = () => {
               viewport={{ once: true }}
               variants={fadeIn}
             >
+              <OfficeTabs />
               <h2 className="text-3xl font-bold mb-8 text-[#019D4D]">
                 Get in Touch
               </h2>
@@ -389,7 +442,8 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                  title="Cantonment Shopping Mall Location"
+                />
               </div>
             </motion.div>
           </div>

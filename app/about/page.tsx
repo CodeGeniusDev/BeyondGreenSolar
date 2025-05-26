@@ -44,7 +44,7 @@ const AboutPage: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-wide mb-4">
-              About Jinnah Expert
+              About Jinnah Xpert
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto px-4">
               Welcome to our Company
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-[#019D4D] p-6 sm:p-8 text-white relative px-6">
               <div className="flex flex-col justify-center items-center gap-2 py-8 sm:py-10 px-4 sm:px-6">
                 <h4 className="text-xs sm:text-sm text-center uppercase tracking-wider">
-                  ABOUT JINNAH EXPERT
+                  ABOUT JINNAH XPERT
                 </h4>
                 <h1 className="text-2xl sm:text-2xl md:text-[2.2rem] font-bold text-white text-center">
                   Welcome to our Company
@@ -85,7 +85,7 @@ const AboutPage: React.FC = () => {
             variants={fadeInUp}
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Go Solar With Jinnah Expert
+              Go Solar With Jinnah Xpert
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
               Jinnah Xpert (Private) Limited is an end-to-end solution provider
@@ -186,7 +186,7 @@ const AboutPage: React.FC = () => {
           variants={fadeInUp}
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-            Jinnah Expert <span className="text-[#019D4D]">Achievements</span>
+            Jinnah Xpert <span className="text-[#019D4D]">Achievements</span>
           </h3>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">

@@ -3,8 +3,15 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CONTACT | Jinnah Solar",
-  description: "Learn more about Jinnah Solar and our contact information.",
+  title: "CONTACT | Jinnah Xpert",
+  description: "Learn more about Jinnah Xpert and our contact information.",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function ContactLayout({

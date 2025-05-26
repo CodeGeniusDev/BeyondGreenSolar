@@ -120,10 +120,10 @@ const Careers: React.FC = () => {
           <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl text-[#252525] font-bold text-center">
             Send your CVs to{" "}
             <Link
-              href="mailto:careers@jinnahxpert.com"
+              href="mailto:info@jinnahxpert.com"
               className="text-[#019D4D] hover:underline inline-block px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
             >
-              care@jinnahexpert.com
+              info@jinnahexpert.com 
             </Link>
           </h2>
         </motion.div>

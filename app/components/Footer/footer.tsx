@@ -13,32 +13,28 @@ const Footer: React.FC = () => {
           <div>
             <Link href="/" className="flex mb-6">
               <div className="flex justify-center items-center gap-4">
-                <img
-                  className="h-20"
-                  src="../../favicon.ico"
-                  alt="logo"
-                />
-                <h2 className="text-2xl font-semibold">Jinnah Expert</h2>
+                <img className="h-20" src="../../favicon.ico" alt="logo" />
+                <h2 className="text-2xl font-semibold">Jinnah Xpert</h2>
               </div>
             </Link>
             <div className="space-y-3 text-gray-400">
               <p>
-                Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road Gulshan
-                e Jamal
-                <br />
-                Karachi Pakistan.
+                Go green with Jinnah Xpert Solar! Quality solar panels for
+                homes and businesses in Pakistan. Contact us today!
               </p>
               <p>
                 <span className="font-medium text-[#019D4D]">UAN No:</span>{" "}
-                0332-3757694
+                0333-8211195
               </p>
               <p>
                 <span className="font-medium text-[#019D4D]">Landline:</span>{" "}
+                021-34572065
+                <br />
                 021-34685110
               </p>
               <p>
                 <span className="font-medium text-[#019D4D]">Email:</span>{" "}
-                care@jinnahexpert.com
+                info@jinnahexpert.com
               </p>
             </div>
           </div>
@@ -49,10 +45,21 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-[#019D4D] font-medium mb-2">Head Office</h3>
                 <p className="text-gray-400">
-                  Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road
-                  Gulshan e Jamal
+                  Office #63 & 64 Cantonment Mall Main Rashid Minhas Road
+                  Gulshan e Jamal,
                   <br />
                   Karachi, 75260.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-[#019D4D] font-medium mb-2">
+                  Lahore Office
+                </h3>
+                <p className="text-gray-400">
+                  Office #12 Ittehad Plaza near Qadafi Stadium Main Liberty
+                  Chowk, Gulberg III,
+                  <br />
+                  Lahore.
                 </p>
               </div>
             </div>
@@ -60,7 +67,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h2 className="text-2xl font-semibold mb-6">Call Now</h2>
-            <Link href="tel:03323757694">
+            <Link href="tel:03338211195">
               <button className="w-full border cursor-pointer border-[#019D4D] text-[#019D4D] py-3 px-6 hover:bg-[#019D4D] hover:text-white transition-colors duration-300">
                 Click Here To Call Now!
               </button>
@@ -83,11 +90,8 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 text-sm">
             © 2025{" "}
-            <LinkPreview
-              url="https:///jinnahexpert.com"
-              className="font-bold"
-            >
-              <span className="text-[#019D4D]">Jinnah Expert</span>
+            <LinkPreview url="https:///jinnahexpert.com" className="font-bold">
+              <span className="text-[#019D4D]">Jinnah Xpert</span>
             </LinkPreview>{" "}
             All Rights Reserved.
           </div>
@@ -98,8 +102,8 @@ const Footer: React.FC = () => {
               className="font-bold"
             >
               <span className="text-[#019D4D]">CodeGenius.Dev</span>
-            </LinkPreview>
-            {" "}with ❤️
+            </LinkPreview>{" "}
+            with ❤️
           </div>
           <div className="flex space-x-6">
             <a
