@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/app/lib/utils";
 import { IconMenu3, IconX } from "@tabler/icons-react";
+import Image from "next/image";
 import {
   motion,
   AnimatePresence,
@@ -242,7 +243,7 @@ export const NavbarLogo: React.FC = () => {
       className="relative z-20 flex items-center space-x-2 px-2 py-2 text-sm font-normal text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
     >
       <img
-        src="favicon.ico"
+       src="../../favicon.ico"
         alt="Jinnah Expert Solar"
         width={40}
         height={40}
@@ -277,12 +278,12 @@ export const NavbarButton: React.FC<{
   };
 
   return (
-    <Tag
+    <a
       href={href}
       onClick={onClick}
       className={cn(baseStyles, variantStyles[variant], className)}
     >
       {children}
-    </Tag>
+    </a>
   );
 };
