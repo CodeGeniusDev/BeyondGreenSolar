@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <Link href="/" className="flex mb-6">
               <div className="flex justify-center items-center gap-4">
                 <img
-                  className="w-20 h-20 rounded-full"
+                  className="h-20"
                   src="../../favicon.ico"
                   alt="logo"
                 />

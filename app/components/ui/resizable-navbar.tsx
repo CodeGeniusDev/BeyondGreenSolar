@@ -242,8 +242,8 @@ export const NavbarLogo: React.FC = () => {
       className="relative z-20 flex items-center space-x-2 px-2 py-2 text-sm font-normal text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
     >
       <img
-        src="/favicon.ico"
-        alt="BeyondGreenSolar"
+        src="favicon.ico"
+        alt="Jinnah Expert Solar"
         width={40}
         height={40}
         className="rounded-full"
