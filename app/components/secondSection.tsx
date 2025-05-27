@@ -8,7 +8,7 @@ export function secondSection() {
       <h2 className="text-xl font-bold mb-10 tracking-tight text-[#333333] sm:text-xl md:text-4xl lg:text-4xl">
         SERVICES
       </h2>
-      <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
+      <div className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
         We offer{" "}
         <LinkPreview url="https://jinnahexpert.com/blogs/home-solar-installation-tips" className="font-bold">
           <span className="text-[#019D4D]">
@@ -25,14 +25,14 @@ export function secondSection() {
         </LinkPreview>{" "}
         you can save more by sending excess energy back to the grid. Go solar
         today and enjoy reliable, cost-effective, and eco-friendly energy!
-      </p>
-      <p className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto">
+      </div>
+      <div className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto">
         Visit{" "}
         <LinkPreview url="https://jinnahexpert.com" className="font-bold">
           <span className="text-[#019D4D]">Jinnah Xpert</span>
         </LinkPreview>{" "}
         for more information.
-      </p>
+      </div>
     </div>
   );
 }

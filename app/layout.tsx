@@ -1,59 +1,71 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { NavbarSection } from "./components/NavbarSection";
 import Footer from "./components/Footer/footer";
 import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Jinnah Xpert Solar | Leading Solar Panel Manufacturer in Pakistan",
+  title: "Jinnah Xpert Solar | Solar Panels & Solutions in Pakistan",
   description:
-    "Jinnah Xpert Solar: Pakistan's top solar panel manufacturer offering high-efficiency solar solutions for homes and businesses. Contact us to go solar today!",
+    "Jinnah Xpert Solar offers high-efficiency solar panels and renewable energy solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi. Go solar now!",
   keywords: [
     "solar panels Pakistan",
     "solar panel manufacturer Pakistan",
     "Jinnah Xpert Solar",
-    "Jinnah Solar",
     "renewable energy Pakistan",
-    "solar energy solutions Karachi",
-    "sustainable energy systems",
+    "solar energy Karachi",
     "solar power for homes",
     "solar power for businesses",
-    "solar energy Karachi",
+    "solar solutions Lahore",
+    "solar equipment Rawalpindi",
+    "solar systems Gujrat",
     "jinnahexpert.com",
   ],
   authors: [
     { name: "Jinnah Xpert Solar Team", url: "https://jinnahexpert.com" },
   ],
-  robots: "index, follow, max-image-preview:large, max-snippet:-1",
-  viewport: "width=device-width, initial-scale=1",
+  robots:
+    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
-    title: "Jinnah Xpert Solar | Premier Solar Panel Manufacturer in Pakistan",
+    title: "Jinnah Xpert Solar | Top Solar Solutions in Pakistan",
     description:
-      "Switch to sustainable energy with Jinnah Xpert Solar! High-quality solar panels for homes and businesses in Pakistan. Contact us for a greener future!",
+      "Switch to renewable energy with Jinnah Xpert Solar’s high-efficiency solar panels in Karachi, Lahore, Gujrat, and Rawalpindi. Contact us today!",
     url: "https://jinnahexpert.com",
     siteName: "Jinnah Xpert Solar",
     images: [
       {
-        url: "https://jinnahexpert.com/image.jpg",
+        url: "https://jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Panels - High-Efficiency Solar Solutions",
+        alt: "Jinnah Xpert Solar Panels - Renewable Energy Solutions",
       },
     ],
     locale: "en_PK",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jinnah Xpert Solar | Solar Panels in Pakistan",
+    description:
+      "Go green with Jinnah Xpert Solar’s solar panels and energy solutions in Karachi, Lahore, and beyond. Contact us!",
+    images: ["https://jinnahexpert.com/favicon.ico"],
+    creator: "@jinnahexpert",
   },
   alternates: {
     canonical: "https://jinnahexpert.com",
@@ -73,21 +85,83 @@ export const metadata: Metadata = {
       name: "Jinnah Xpert Solar",
       url: "https://jinnahexpert.com",
       logo: "https://jinnahexpert.com/favicon.ico",
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+92332-3757694",
-        contactType: "Customer Service",
-        areaServed: "PK",
-        availableLanguage: "English",
-      },
-      address: {
-        "@type": "PostalAddress",
-        streetAddress:
-          "Office # 63 & 64 Cantonment Mall Main Rashid Minhas Road",
-        addressLocality: "Gulshan e Jamal, Karachi",
-        postalCode: "75260",
-        addressCountry: "PK",
-      },
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress:
+            "Office # 63 & 64, Ground Floor, Cantonment Shopping Mall, Main Rashid Minhas Road, Gulshan-e-Jamal",
+          addressLocality: "Karachi",
+          addressRegion: "Sindh",
+          postalCode: "75300",
+          addressCountry: "PK",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress:
+            "Office # 09, Runway Commercial, AOHS Falcon, New Malir",
+          addressLocality: "Karachi",
+          addressRegion: "Sindh",
+          postalCode: "75050",
+          addressCountry: "PK",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress:
+            "Office # 12, Ittehad Plaza, near Qadafi Stadium, Main Liberty Chowk, Gulberg III",
+          addressLocality: "Lahore",
+          addressRegion: "Punjab",
+          postalCode: "54660",
+          addressCountry: "PK",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Office # 05, Pehlwan Chowk, Main GT Road",
+          addressLocality: "Gujrat",
+          addressRegion: "Punjab",
+          postalCode: "50700",
+          addressCountry: "PK",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Office # 14, Satellite Town",
+          addressLocality: "Rawalpindi",
+          addressRegion: "Punjab",
+          postalCode: "46000",
+          addressCountry: "PK",
+        },
+      ],
+      telephone: "+92333-8211195",
+      email: "info@jinnahexpert.com",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+92333-8211195",
+          contactType: "Customer Service",
+          areaServed: "PK",
+          availableLanguage: ["English", "Urdu"],
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+9221-34572065",
+          contactType: "Customer Service",
+          areaServed: "PK",
+          availableLanguage: ["English", "Urdu"],
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+9221-34685110",
+          contactType: "Customer Service",
+          areaServed: "PK",
+          availableLanguage: ["English", "Urdu"],
+        },
+        {
+          "@type": "ContactPoint",
+          email: "info@jinnahexpert.com",
+          contactType: "Customer Service",
+          areaServed: "PK",
+          availableLanguage: ["English", "Urdu"],
+        },
+      ],
       sameAs: [
         "https://www.facebook.com/jinnahexpert",
         "https://www.instagram.com/jinnahexpert",
@@ -97,13 +171,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -111,14 +178,29 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-PK"
       dir="ltr"
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${inter.variable} ${poppins.variable}`}
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/fonts/inter.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/poppins.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <Script
           id="iubenda-cs-configuration"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               var _iub = _iub || [];
@@ -132,22 +214,15 @@ export default function RootLayout({
           }}
         />
         <Script
-          type="text/javascript"
           src="https://cs.iubenda.com/autoblocking/4031420.js"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
         />
+        <Script src="//cdn.iubenda.com/cs/gpp/stub.js" strategy="lazyOnload" />
         <Script
-          type="text/javascript"
-          src="//cdn.iubenda.com/cs/gpp/stub.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          type="text/javascript"
           src="//cdn.iubenda.com/cs/iubenda_cs.js"
           charSet="UTF-8"
           strategy="lazyOnload"
         />
-
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CQGN7YD88N"
           strategy="afterInteractive"
@@ -164,41 +239,49 @@ export default function RootLayout({
             `,
           }}
         />
-
         <Script
-          type="text/javascript"
           src="https://www.clarity.ms/tag/rojyflares"
           strategy="afterInteractive"
         />
-
-        {/* Meta pixel code here */}
-        <Script id="meta-pixel">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '4110146695884260');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=4110146695884260&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
+        {/* <Script
+          id="meta-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.bq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '4110146695884260');
+              fbq('track', 'PageView');
+            `,
+          }}
+        /> */}
+        {/* <Script
+          id="meta-pixel-noscript"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              <noscript>
+                <img
+                  height="1"
+                  width="1"
+                  style="display:none"
+                  src="https://www.facebook.com/tr?id=4110146695884260&ev=PageView&noscript=1"
+                  alt=""
+                />
+              </noscript>
+            `,
+          }}
+        /> */}
       </head>
       <body className="antialiased overflow-x-hidden">
         <NavbarSection />
-        {children}
+        <main role="main">{children}</main>
         <Footer />
         <div className="fixed bottom-10 right-10 z-[9999] cursor-pointer">
           <Whatsapp />

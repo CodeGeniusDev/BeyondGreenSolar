@@ -43,7 +43,9 @@ const Footer: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-6">Offices</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-[#019D4D] font-medium mb-2">Head Office</h3>
+                <h3 className="text-[#019D4D] font-medium mb-2">
+                  Karachi central office
+                </h3>
                 <p className="text-gray-400">
                   Office #63 & 64 Cantonment Mall Main Rashid Minhas Road
                   Gulshan e Jamal,

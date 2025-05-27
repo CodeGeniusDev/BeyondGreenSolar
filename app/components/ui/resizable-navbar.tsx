@@ -242,8 +242,8 @@ export const NavbarLogo: React.FC = () => {
       href="/"
       className="relative z-20 flex items-center space-x-2 px-2 py-2 text-sm font-normal text-white focus:outline-none focus:ring-2 focus:ring-[#019D4D] rounded-md"
     >
-      <img
-       src="../../favicon.ico"
+      <Image
+        src="/favicon.ico"
         alt="Jinnah Xpert Solar"
         width={40}
         height={40}
@@ -263,7 +263,7 @@ export const NavbarButton: React.FC<{
   onClick?: () => void;
 }> = ({
   href,
-  as: Tag = "a",
+  as: Tag = "button",
   children,
   className,
   variant = "primary",
@@ -277,13 +277,20 @@ export const NavbarButton: React.FC<{
     dark: "bg-[#333333] text-white shadow-md hover:bg-[#222222]",
   };
 
+  if (href) {
+    return (
+      <Link href={href} onClick={onClick} className={cn(baseStyles, variantStyles[variant], className)}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <a
-      href={href}
+    <Tag
       onClick={onClick}
       className={cn(baseStyles, variantStyles[variant], className)}
     >
       {children}
-    </a>
+    </Tag>
   );
 };
