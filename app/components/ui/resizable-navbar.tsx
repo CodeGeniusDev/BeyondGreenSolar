@@ -248,6 +248,13 @@ export const NavbarLogo: React.FC = () => {
         width={40}
         height={40}
         className="rounded-full"
+        onError={(e) => {
+          e.currentTarget.src = "/favicon.ico";
+        }}
+        onErrorCapture={(e) => {
+          e.currentTarget.src = "/favicon.ico";
+        }}
+        priority={false}
       />
       <span className="font-extrabold text-white">JX Solar</span>
     </Link>

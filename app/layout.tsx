@@ -185,20 +185,6 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="/fonts/inter.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/poppins.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
         <Script
           id="iubenda-cs-configuration"
           strategy="lazyOnload"
