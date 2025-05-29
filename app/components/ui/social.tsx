@@ -123,7 +123,7 @@ const SocialLinks: React.FC = () => {
   );
 
   const renderMobileView = () => (
-    <div className="fixed top-1/2 left-0 z-100 -translate-y-1/2" onKeyDown={handleKeyDown}>
+    <div className="fixed top-[40%] left-0 z-100" onKeyDown={handleKeyDown}>
       <button
         ref={buttonRef}
         onClick={toggleMenu}
