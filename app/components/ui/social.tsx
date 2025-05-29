@@ -27,7 +27,7 @@ const SocialLinks: React.FC = () => {
   ];
 
   return (
-    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+    <div className="fixed left-0 top-1/3 transform -translate-y-1/2 z-50">
       <div className="flex flex-col items-center gap-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm p-2 sm:p-3 rounded-r-lg shadow-xl border border-gray-200/50 dark:border-gray-700/50">
         {socialLinks.map((link) => (
           <div key={link.id} className="group relative">
