@@ -95,7 +95,7 @@ const SocialLinks: React.FC = () => {
   );
 
   const renderMobileView = () => (
-    <div className="fixed top-1/2 -left-[2px] z-40 transform -translate-y-1/2">
+    <div className="fixed top-1/2 -left-[2px] z-49 transform -translate-y-1/2">
       <button
         onClick={toggleMenu}
        className="w-10 h-10 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border border-white rounded-r-full shadow-lg flex items-center justify-center text-white transition-transform duration-200 cursor-pointer"
