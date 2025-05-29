@@ -287,7 +287,7 @@ export default function RootLayout({
         <div className="fixed bottom-10 right-10 z-[9999] cursor-pointer">
           <Whatsapp />
         </div>
-        <div className="fixed top-1/2 -left-[2px]">
+        <div className="fixed top-1/2 -left-[2px] z-[99]">
           <SocialLinks />
         </div>
       </body>
