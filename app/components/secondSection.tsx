@@ -29,7 +29,7 @@ export function secondSection() {
       <div className="text-neutral-500 dark:text-neutral-600 text-xl md:text-3xl max-w-3xl mx-auto">
         Visit{" "}
         <LinkPreview url="https://jinnahexpert.com" className="font-bold">
-          <span className="text-[#019D4D]">Jinnah Xpert</span>
+          <span className="text-[#019D4D]">Jinnah Xperts</span>
         </LinkPreview>{" "}
         for more information.
       </div>

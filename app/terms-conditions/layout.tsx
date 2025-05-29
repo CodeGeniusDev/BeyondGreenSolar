@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Terms & Conditions | Jinnah Xpert Solar Energy Solutions Pakistan",
+  title: "Terms & Conditions | Jinnah Xperts Solar Energy Solutions Pakistan",
   description:
-    "Review Jinnah Xpert’s Terms & Conditions for solar energy services, including solar panel installation and renewable energy solutions in Karachi, Lahore, Gujrat, and Rawalpindi.",
+    "Review Jinnah Xperts’ Terms & Conditions for solar energy services, including solar panel installation and renewable energy solutions in Karachi, Lahore, Gujrat, and Rawalpindi.",
   keywords: [
-    "Jinnah Xpert terms and conditions",
+    "Jinnah Xperts terms and conditions",
     "solar company terms Pakistan",
     "solar energy Karachi",
     "solar panel installation terms Lahore",
@@ -17,17 +17,17 @@ export const metadata = {
     "solar solutions Gujrat",
   ],
   openGraph: {
-    title: "Terms & Conditions | Jinnah Xpert Solar Energy Solutions Pakistan",
+    title: "Terms & Conditions | Jinnah Xperts Solar Energy Solutions Pakistan",
     description:
-      "Understand the Terms & Conditions for Jinnah Xpert’s solar energy services across Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "Understand the Terms & Conditions for Jinnah Xperts’ solar energy services across Karachi, Lahore, Gujrat, and Rawalpindi.",
     url: "https://www.jinnahexpert.com/terms-conditions",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Terms & Conditions",
+        alt: "Jinnah Xperts Terms & Conditions",
       },
     ],
     locale: "en_US",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms & Conditions | Jinnah Xpert",
+    title: "Terms & Conditions | Jinnah Xperts",
     description:
-      "Jinnah Xpert’s Terms & Conditions for solar energy solutions in Pakistan.",
+      "Jinnah Xperts’ Terms & Conditions for solar energy solutions in Pakistan.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -79,13 +79,13 @@ export default function TermsConditionsLayout({
               "@type": "WebPage",
               name: "Terms & Conditions",
               description:
-                "Jinnah Xpert’s Terms & Conditions outline the terms for our solar energy services in Pakistan.",
+                "Jinnah Xperts’ Terms & Conditions outline the terms for our solar energy services in Pakistan.",
               url: "https://www.jinnahexpert.com/terms-conditions",
               publisher: {
                 "@type": "Organization",
-                name: "Jinnah Xpert",
+                name: "Jinnah Xperts",
                 description:
-                  "Jinnah Xpert provides solar panel installation and renewable energy solutions across Pakistan.",
+                  "Jinnah Xperts provides solar panel installation and renewable energy solutions across Pakistan.",
                 url: "https://www.jinnahexpert.com",
                 logo: {
                   "@type": "ImageObject",
@@ -166,9 +166,9 @@ export default function TermsConditionsLayout({
                   },
                 ],
                 sameAs: [
-                  "https://www.facebook.com/jinnahexpert",
-                  "https://www.twitter.com/jinnahexpert",
-                  "https://www.linkedin.com/company/jinnahexpert",
+                  "https://www.facebook.com/profile.php?id=61575885641451",
+                  "https://www.instagram.com/jinnah__xperts",
+                  "https://www.linkedin.com/company/jinnahxpert",
                 ],
               },
             }),

@@ -105,20 +105,20 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Post Not Found - Jinnah Xpert Solar Blog",
+      title: "Post Not Found - Jinnah Xperts Solar Blog",
       description: "The requested solar blog post could not be found.",
-      keywords: ["solar blog", "Jinnah Xpert", "not found"],
+      keywords: ["solar blog", "Jinnah Xperts", "not found"],
       openGraph: {
-        title: "Post Not Found - Jinnah Xpert Solar Blog",
+        title: "Post Not Found - Jinnah Xperts Solar Blog",
         description: "The requested solar blog post could not be found.",
         url: "https://www.jinnahexpert.com/blogs",
-        siteName: "Jinnah Xpert",
+        siteName: "Jinnah Xperts",
         images: [
           {
             url: "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
             width: 1200,
             height: 630,
-            alt: "Jinnah Xpert Solar Blog",
+            alt: "Jinnah Xperts Solar Blog",
           },
         ],
         locale: "en_US",
@@ -126,7 +126,7 @@ export async function generateMetadata({
       },
       twitter: {
         card: "summary_large_image",
-        title: "Post Not Found - Jinnah Xpert Solar Blog",
+        title: "Post Not Found - Jinnah Xperts Solar Blog",
         description: "The requested solar blog post could not be found.",
         images: ["https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg"],
       },
@@ -134,27 +134,27 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | Jinnah Xpert Solar Blog`,
+    title: `${post.title} | Jinnah Xperts Solar Blog`,
     description: post.excerpt,
     keywords: [
       post.category.toLowerCase(),
       "solar energy Pakistan",
-      "Jinnah Xpert",
+      "Jinnah Xperts",
       post.title.toLowerCase(),
       "solar panel installation",
       "renewable energy",
     ],
     openGraph: {
-      title: `${post.title} | Jinnah Xpert Solar Blog`,
+      title: `${post.title} | Jinnah Xperts Solar Blog`,
       description: post.excerpt,
       url: `https://www.jinnahexpert.com/blogs/${post.slug}`,
-      siteName: "Jinnah Xpert",
+      siteName: "Jinnah Xperts",
       images: [
         {
           url: post.featuredImage,
           width: 1200,
           height: 630,
-          alt: `${post.title} by Jinnah Xpert`,
+          alt: `${post.title} by Jinnah Xperts`,
         },
       ],
       locale: "en_US",
@@ -162,7 +162,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Jinnah Xpert Solar Blog`,
+      title: `${post.title} | Jinnah Xperts Solar Blog`,
       description: post.excerpt,
       images: [post.featuredImage],
     },
@@ -219,11 +219,11 @@ export default async function BlogPostLayout({
                   url: `https://www.jinnahexpert.com/blogs/${post.slug}`,
                   author: {
                     "@type": "Organization",
-                    name: "Jinnah Xpert",
+                    name: "Jinnah Xperts",
                   },
                   publisher: {
                     "@type": "Organization",
-                    name: "Jinnah Xpert",
+                    name: "Jinnah Xperts",
                     logo: {
                       "@type": "ImageObject",
                       url: "https://www.jinnahexpert.com/favicon.ico",
@@ -307,9 +307,9 @@ export default async function BlogPostLayout({
                       },
                     ],
                     sameAs: [
-                      "https://www.facebook.com/jinnahexpert",
-                      "https://www.twitter.com/jinnahexpert",
-                      "https://www.linkedin.com/company/jinnahexpert",
+                      "https://www.facebook.com/profile.php?id=61575885641451",
+                      "https://www.instagram.com/jinnah__xperts",
+                      "https://www.linkedin.com/company/jinnahxpert",
                     ],
                   },
                 }),

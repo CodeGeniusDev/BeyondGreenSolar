@@ -34,8 +34,8 @@ const HeroSection: React.FC = () => {
       </div>
 
       <InfoBox
-        title="Go Solar With Jinnah Xpert"
-        description="Jinnah Xpert (Private) Limited is an end-to-end solution provider for our clients' solar needs. Our core essence lies in providing the most-cost effective solar solutions following the best practices in Installation and Commissioning for 1-tier PV Solar power projects for both Grid-connected and Hybrid solution for residential, commercial and industrial consumers."
+        title="Go Solar With Jinnah Xperts"
+        description="Jinnah Xperts (Private) Limited is an end-to-end solution provider for our clients' solar needs. Our core essence lies in providing the most-cost effective solar solutions following the best practices in Installation and Commissioning for 1-tier PV Solar power projects for both Grid-connected and Hybrid solution for residential, commercial and industrial consumers."
       />
     </section>
   );

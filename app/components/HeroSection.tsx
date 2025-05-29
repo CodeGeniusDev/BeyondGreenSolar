@@ -7,7 +7,7 @@ const slides = [
   {
     id: 1,
     image: "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg",
-    title: "Go Solar with Jinnah Xpert",
+    title: "Go Solar with Jinnah Xperts",
     subtitle: "Clean, cheap, and easy energy.",
     buttonText: "Get Started",
   },
@@ -16,7 +16,7 @@ const slides = [
     image:
       "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
     title: "Smart Solar for Everyone",
-    subtitle: "Save money and enjoy clean energy with Jinnah Xpert.",
+    subtitle: "Save money and enjoy clean energy with Jinnah Xperts.",
     buttonText: "Learn More",
   },
 ];

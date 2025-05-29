@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Privacy Policy | Jinnah Xpert Solar Energy Solutions Pakistan",
+  title: "Privacy Policy | Jinnah Xperts Solar Energy Solutions Pakistan",
   description:
-    "Read Jinnah Xpert’s Privacy Policy to understand how we protect your data while providing solar energy solutions in Karachi, Lahore, Gujrat, and Rawalpindi.",
+    "Read Jinnah Xperts’ Privacy Policy to understand how we protect your data while providing solar energy solutions in Karachi, Lahore, Gujrat, and Rawalpindi.",
   keywords: [
-    "Jinnah Xpert privacy policy",
+    "Jinnah Xperts privacy policy",
     "solar company privacy policy Pakistan",
     "solar energy Karachi",
     "renewable energy privacy",
@@ -18,17 +18,17 @@ export const metadata = {
     "data protection solar company",
   ],
   openGraph: {
-    title: "Privacy Policy | Jinnah Xpert Solar Energy Solutions Pakistan",
+    title: "Privacy Policy | Jinnah Xperts Solar Energy Solutions Pakistan",
     description:
-      "Learn how Jinnah Xpert safeguards your personal information while delivering solar energy services across Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "Learn how Jinnah Xperts safeguards your personal information while delivering solar energy services across Karachi, Lahore, Gujrat, and Rawalpindi.",
     url: "https://www.jinnahexpert.com/privacy-policy",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Privacy Policy",
+        alt: "Jinnah Xperts Privacy Policy",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy | Jinnah Xpert",
+    title: "Privacy Policy | Jinnah Xperts",
     description:
-      "Jinnah Xpert’s Privacy Policy outlines how we protect your data for solar energy services in Pakistan.",
+      "Jinnah Xperts’ Privacy Policy outlines how we protect your data for solar energy services in Pakistan.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -80,13 +80,13 @@ export default function PrivacyPolicyLayout({
               "@type": "WebPage",
               name: "Privacy Policy",
               description:
-                "Jinnah Xpert’s Privacy Policy details how we handle personal data for our solar energy solutions in Pakistan.",
+                "Jinnah Xperts’ Privacy Policy details how we handle personal data for our solar energy solutions in Pakistan.",
               url: "https://www.jinnahexpert.com/privacy-policy",
               publisher: {
                 "@type": "Organization",
-                name: "Jinnah Xpert",
+                name: "Jinnah Xperts",
                 description:
-                  "Jinnah Xpert provides solar panel installation and renewable energy solutions across Pakistan.",
+                  "Jinnah Xperts provides solar panel installation and renewable energy solutions across Pakistan.",
                 url: "https://www.jinnahexpert.com",
                 logo: {
                   "@type": "ImageObject",
@@ -167,9 +167,9 @@ export default function PrivacyPolicyLayout({
                   },
                 ],
                 sameAs: [
-                  "https://www.facebook.com/jinnahexpert",
-                  "https://www.twitter.com/jinnahexpert",
-                  "https://www.linkedin.com/company/jinnahexpert",
+                  "https://www.facebook.com/profile.php?id=61575885641451",
+                  "https://www.instagram.com/jinnah__xperts",
+                  "https://www.linkedin.com/company/jinnahxpert",
                 ],
               },
             }),

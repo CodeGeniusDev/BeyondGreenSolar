@@ -7,7 +7,7 @@ const TermsConditions: React.FC = () => {
         <h1 className="text-3xl font-bold text-[#019D4D] mb-8">Terms & Conditions</h1>
 
         <p className="mb-4">
-          Welcome to <strong>Jinnah Xpert (Private) Limited</strong>. By using our website or services, you agree to
+          Welcome to <strong className="text-[#019D4D]">Jinnah Xperts (Private) Limited</strong>. By using our website or services, you agree to
           the following terms and conditions.
         </p>
 
@@ -31,13 +31,13 @@ const TermsConditions: React.FC = () => {
 
         <h2 className="text-2xl font-semibold text-[#019D4D] mt-8 mb-3">4. Intellectual Property</h2>
         <p className="mb-4">
-          All content, images, branding, and materials on this website are owned by Jinnah Xpert and cannot be reused
+          All content, images, branding, and materials on this website are owned by Jinnah Xperts and cannot be reused
           without permission.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#019D4D] mt-8 mb-3">5. Limitation of Liability</h2>
         <p className="mb-4">
-          Jinnah Xpert shall not be held liable for any indirect or consequential damages arising from use of our
+          Jinnah Xperts shall not be held liable for any indirect or consequential damages arising from use of our
           services.
         </p>
 
@@ -49,7 +49,7 @@ const TermsConditions: React.FC = () => {
         <h2 className="text-2xl font-semibold text-[#019D4D] mt-8 mb-3">7. Contact</h2>
         <p>
           For questions, contact us at:{' '}
-          <a href="mailto:info@jinnahexpert.com" className="text-blue-600 underline">
+          <a href="mailto:info@jinnahexpert.com" className="text-[#019D4D]">
           info@jinnahexpert.com 
           </a>
         </p>

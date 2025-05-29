@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
             <Link href="/" className="flex mb-6">
               <div className="flex justify-center items-center gap-4">
                 <img className="h-20" src="../../favicon.ico" alt="logo" />
-                <h2 className="text-2xl font-semibold">Jinnah Xpert</h2>
+                <h2 className="text-2xl font-semibold">Jinnah Xperts</h2>
               </div>
             </Link>
             <div className="space-y-3 text-gray-400">
               <p>
-                Go green with Jinnah Xpert Solar! Quality solar panels for
+                Go green with Jinnah Xperts Solar! Quality solar panels for
                 homes and businesses in Pakistan. Contact us today!
               </p>
               <p>
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
           <div className="text-gray-400 text-sm">
             © 2025{" "}
             <LinkPreview url="https:///jinnahexpert.com" className="font-bold">
-              <span className="text-[#019D4D]">Jinnah Xpert</span>
+              <span className="text-[#019D4D]">Jinnah Xperts</span>
             </LinkPreview>{" "}
             All Rights Reserved.
           </div>
@@ -109,29 +109,35 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex space-x-6">
             <a
-              href="https://www.facebook.com/jinnahexpert"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/profile.php?id=61575885641451"
               className="text-gray-400 hover:text-[#019D4D] transition-colors duration-300"
             >
               <Facebook size={20} />
             </a>
             <a
-              href="https://www.instagram.com/jinnahexpert"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/jinnah__xperts/"
               className="text-gray-400 hover:text-[#019D4D] transition-colors duration-300"
             >
               <Instagram size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/company/jinnahexpert"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/jinnahxpert"
               className="text-gray-400 hover:text-[#019D4D] transition-colors duration-300"
             >
               <Linkedin size={20} />
             </a>
-            <a
+            {/* <a
               href="https://www.youtube.com/@jinnahexpert"
               className="text-gray-400 hover:text-[#019D4D] transition-colors duration-300"
             >
               <Youtube size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

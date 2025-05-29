@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Jinnah Xpert Solar Blog | Latest Solar Energy News in Pakistan",
+  title: "Jinnah Xperts Solar Blog | Latest Solar Energy News in Pakistan",
   description:
-    "Explore Jinnah Xpert’s blog for the latest solar energy news, solar panel installation tips, and renewable energy insights in Pakistan.",
+    "Explore Jinnah Xperts’ blog for the latest solar energy news, solar panel installation tips, and renewable energy insights in Pakistan.",
   keywords: [
-    "Jinnah Xpert solar blog",
+    "Jinnah Xperts solar blog",
     "solar energy Pakistan",
     "solar panel installation tips",
     "renewable energy news",
@@ -18,17 +18,17 @@ export const metadata = {
     "solar company blog Pakistan",
   ],
   openGraph: {
-    title: "Jinnah Xpert Solar Blog | Latest Solar Energy News in Pakistan",
+    title: "Jinnah Xperts Solar Blog | Latest Solar Energy News in Pakistan",
     description:
-      "Explore Jinnah Xpert’s blog for the latest solar energy news, solar panel installation tips, and renewable energy insights in Pakistan.",
+      "Explore Jinnah Xperts’ blog for the latest solar energy news, solar panel installation tips, and renewable energy insights in Pakistan.",
     url: "https://www.jinnahexpert.com/blogs",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Blog",
+        alt: "Jinnah Xperts Solar Blog",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jinnah Xpert Solar Blog",
+    title: "Jinnah Xperts Solar Blog",
     description:
-      "Stay updated with Jinnah Xpert’s solar blog for tips on solar panel installation and renewable energy in Pakistan.",
+      "Stay updated with Jinnah Xperts’ solar blog for tips on solar panel installation and renewable energy in Pakistan.",
     images: ["https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg"],
   },
 };
@@ -78,13 +78,13 @@ export default function BlogLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Blog",
-              name: "Jinnah Xpert Solar Blog",
+              name: "Jinnah Xperts Solar Blog",
               description:
-                "Jinnah Xpert’s blog provides the latest news, tips, and insights on solar energy and renewable solutions in Pakistan.",
+                "Jinnah Xperts’ blog provides the latest news, tips, and insights on solar energy and renewable solutions in Pakistan.",
               url: "https://www.jinnahexpert.com/blogs",
               publisher: {
                 "@type": "Organization",
-                name: "Jinnah Xpert",
+                name: "Jinnah Xperts",
                 logo: {
                   "@type": "ImageObject",
                   url: "https://www.jinnahexpert.com/favicon.ico",
@@ -164,9 +164,9 @@ export default function BlogLayout({
                   },
                 ],
                 sameAs: [
-                  "https://www.facebook.com/jinnahexpert",
-                  "https://www.twitter.com/jinnahexpert",
-                  "https://www.linkedin.com/company/jinnahexpert",
+                  "https://www.facebook.com/profile.php?id=61575885641451",
+                  "https://www.instagram.com/jinnah__xperts",
+                  "https://www.linkedin.com/company/jinnahxpert",
                 ],
               },
             }),

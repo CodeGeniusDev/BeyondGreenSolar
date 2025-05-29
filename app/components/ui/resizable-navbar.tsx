@@ -244,7 +244,7 @@ export const NavbarLogo: React.FC = () => {
     >
       <Image
         src="/favicon.ico"
-        alt="Jinnah Xpert Solar"
+        alt="Jinnah Xperts Solar"
         width={40}
         height={40}
         className="rounded-full"

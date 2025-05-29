@@ -4,30 +4,30 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
-  title: "About Jinnah Xpert | Leading Solar Energy Solutions in Pakistan",
+  title: "About Jinnah Xperts | Leading Solar Energy Solutions in Pakistan",
   description:
-    "Discover Jinnah Xpert, your trusted partner for solar energy solutions in Pakistan. Learn about our mission to provide sustainable solar panel installations and renewable energy services.",
+    "Discover Jinnah Xperts, your trusted partner for solar energy solutions in Pakistan. Learn about our mission to provide sustainable solar panel installations and renewable energy services.",
   keywords: [
-    "Jinnah Xpert",
+    "Jinnah Xperts",
     "solar energy Pakistan",
     "solar panel installation",
     "renewable energy solutions",
     "solar company Pakistan",
     "solar power services",
-    "about Jinnah Xpert",
+    "about Jinnah Xperts",
   ],
   openGraph: {
-    title: "About Jinnah Xpert | Leading Solar Energy Solutions in Pakistan",
+    title: "About Jinnah Xperts | Leading Solar Energy Solutions in Pakistan",
     description:
-      "Discover Jinnah Xpert, your trusted partner for solar energy solutions in Pakistan. Learn about our mission to provide sustainable solar panel installations and renewable energy services.",
+      "Discover Jinnah Xperts, your trusted partner for solar energy solutions in Pakistan. Learn about our mission to provide sustainable solar panel installations and renewable energy services.",
     url: "https://www.jinnahexpert.com/about",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Energy Solutions",
+        alt: "Jinnah Xperts Solar Energy Solutions",
       },
     ],
     locale: "en_US",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Jinnah Xpert",
+    title: "About Jinnah Xperts",
     description:
-      "Discover Jinnah Xpert’s mission to deliver top-tier solar energy solutions and sustainable power in Pakistan.",
+      "Discover Jinnah Xperts’ mission to deliver top-tier solar energy solutions and sustainable power in Pakistan.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -70,9 +70,9 @@ export default function AboutLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert provides top-tier solar energy solutions, including solar panel installation and renewable energy services in Pakistan.",
+                "Jinnah Xperts provides top-tier solar energy solutions, including solar panel installation and renewable energy services in Pakistan.",
               url: "https://www.jinnahexpert.com/about",
               telephone: "+92333-8211195",
               email: "info@jinnahexpert.com",
@@ -154,9 +154,9 @@ export default function AboutLayout({
                 url: "https://www.jinnahexpert.com/favicon.ico",
               },
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
             }),
           }}

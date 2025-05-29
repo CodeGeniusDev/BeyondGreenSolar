@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Solar Projects | Jinnah Xpert Solar Energy Solutions Pakistan",
+  title: "Solar Projects | Jinnah Xperts Solar Energy Solutions Pakistan",
   description:
-    "Explore Jinnah Xpert’s solar projects, delivering renewable energy solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi.",
+    "Explore Jinnah Xperts’ solar projects, delivering renewable energy solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi.",
   keywords: [
-    "Jinnah Xpert solar projects",
+    "Jinnah Xperts solar projects",
     "solar projects Pakistan",
     "solar energy Karachi",
     "solar panel installation Lahore",
@@ -17,17 +17,17 @@ export const metadata = {
     "solar solutions Gujrat",
   ],
   openGraph: {
-    title: "Solar Projects | Jinnah Xpert Solar Energy Solutions Pakistan",
+    title: "Solar Projects | Jinnah Xperts Solar Energy Solutions Pakistan",
     description:
-      "Discover Jinnah Xpert’s solar projects showcasing renewable energy solutions across Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "Discover Jinnah Xperts’ solar projects showcasing renewable energy solutions across Karachi, Lahore, Gujrat, and Rawalpindi.",
     url: "https://www.jinnahexpert.com/projects",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Projects",
+        alt: "Jinnah Xperts Solar Projects",
       },
     ],
     locale: "en_US",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Projects | Jinnah Xpert",
+    title: "Solar Projects | Jinnah Xperts",
     description:
-      "See Jinnah Xpert’s solar projects transforming energy in Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "See Jinnah Xperts’ solar projects transforming energy in Karachi, Lahore, Gujrat, and Rawalpindi.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -77,9 +77,9 @@ export default function ProjectsLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert delivers innovative solar projects, providing renewable energy solutions across Pakistan.",
+                "Jinnah Xperts delivers innovative solar projects, providing renewable energy solutions across Pakistan.",
               url: "https://www.jinnahexpert.com/projects",
               logo: {
                 "@type": "ImageObject",
@@ -160,9 +160,9 @@ export default function ProjectsLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
               project: [
                 {

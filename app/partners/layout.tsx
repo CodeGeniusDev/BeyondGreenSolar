@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Partners of Jinnah Xpert | Solar Energy Collaborations in Pakistan",
+  title: "Partners of Jinnah Xperts | Solar Energy Collaborations in Pakistan",
   description:
-    "Discover Jinnah Xpert’s trusted partners in solar energy solutions. Collaborate with us in Karachi, Lahore, Gujrat, or Rawalpindi to advance renewable energy in Pakistan.",
+    "Discover Jinnah Xperts’ trusted partners in solar energy solutions. Collaborate with us in Karachi, Lahore, Gujrat, or Rawalpindi to advance renewable energy in Pakistan.",
   keywords: [
-    "Jinnah Xpert partners",
+    "Jinnah Xperts partners",
     "solar partnerships Pakistan",
     "solar energy collaborations",
     "solar panel suppliers Karachi",
@@ -18,17 +18,17 @@ export const metadata = {
     "solar solutions Gujrat",
   ],
   openGraph: {
-    title: "Partners of Jinnah Xpert | Solar Energy Collaborations in Pakistan",
+    title: "Partners of Jinnah Xperts | Solar Energy Collaborations in Pakistan",
     description:
-      "Explore Jinnah Xpert’s partnerships in solar panel installation and renewable energy solutions across Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "Explore Jinnah Xperts’ partnerships in solar panel installation and renewable energy solutions across Karachi, Lahore, Gujrat, and Rawalpindi.",
     url: "https://www.jinnahexpert.com/partners",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Partnerships",
+        alt: "Jinnah Xperts Solar Partnerships",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Partners of Jinnah Xpert",
+    title: "Partners of Jinnah Xperts",
     description:
-      "Join Jinnah Xpert’s network of solar energy partners in Pakistan. Collaborate with us in Karachi, Lahore, Gujrat, or Rawalpindi.",
+      "Join Jinnah Xperts’ network of solar energy partners in Pakistan. Collaborate with us in Karachi, Lahore, Gujrat, or Rawalpindi.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -78,9 +78,9 @@ export default function PartnersLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert partners with leading solar energy companies to provide top-tier solar panel installation and renewable energy solutions across Pakistan.",
+                "Jinnah Xperts partners with leading solar energy companies to provide top-tier solar panel installation and renewable energy solutions across Pakistan.",
               url: "https://www.jinnahexpert.com/partners",
               logo: {
                 "@type": "ImageObject",
@@ -161,15 +161,15 @@ export default function PartnersLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
               member: [
                 {
                   "@type": "Organization",
                   name: "Sample Solar Partner",
-                  description: "A leading solar panel manufacturer collaborating with Jinnah Xpert.",
+                  description: "A leading solar panel manufacturer collaborating with Jinnah Xperts.",
                   url: "https://www.jinnahexpert.com",
                 },
                 // Add more partner organizations as needed

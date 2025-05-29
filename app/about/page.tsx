@@ -44,7 +44,7 @@ const AboutPage: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-wide mb-4">
-              About Jinnah Xpert
+              About Jinnah Xperts
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto px-4">
               Welcome to our Company
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-[#019D4D] p-6 sm:p-8 text-white relative px-6">
               <div className="flex flex-col justify-center items-center gap-2 py-8 sm:py-10 px-4 sm:px-6">
                 <h4 className="text-xs sm:text-sm text-center uppercase tracking-wider">
-                  ABOUT JINNAH XPERT
+                  ABOUT JINNAH XPERTS
                 </h4>
                 <h1 className="text-2xl sm:text-2xl md:text-[2.2rem] font-bold text-white text-center">
                   Welcome to our Company
@@ -85,10 +85,10 @@ const AboutPage: React.FC = () => {
             variants={fadeInUp}
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Go Solar With Jinnah Xpert
+              Go Solar With Jinnah Xperts
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
-              Jinnah Xpert (Private) Limited is an end-to-end solution provider
+              Jinnah Xperts (Private) Limited is an end-to-end solution provider
               for our clients' solar needs. Our core essence lies in providing
               the most-cost effective solar solutions following the best
               practices in Installation and Commissioning for 1-tier PV Solar
@@ -100,7 +100,7 @@ const AboutPage: React.FC = () => {
               As a leading solar solution provider, we offer a comprehensive
               range of innovative services, including solar panel installation,
               energy efficient solutions, and sustainable power system for
-              diverse applications. By choosing Jinnah Xpert, you're not just
+              diverse applications. By choosing Jinnah Xperts, you're not just
               embracing solar energy you're joining us and greener Pakistan.
             </p>
           </motion.div>
@@ -122,7 +122,7 @@ const AboutPage: React.FC = () => {
             What We Do
           </h3>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
-            At Jinnah Xpert (Pvt. Ltd.) we specialize in providing innovative
+            At Jinnah Xperts (Pvt. Ltd.) we specialize in providing innovative
             solar solutions that empower Pakistan's transition toward
             sustainable energy sources. Our expertise lies in designing,
             implementing, and maintaining cutting-edge solar systems for
@@ -186,7 +186,7 @@ const AboutPage: React.FC = () => {
           variants={fadeInUp}
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-            Jinnah Xpert <span className="text-[#019D4D]">Achievements</span>
+            Jinnah Xperts <span className="text-[#019D4D]">Achievements</span>
           </h3>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">

@@ -5,6 +5,7 @@ import Footer from "./components/Footer/footer";
 import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
 import "./globals.css";
+import SocialLinks from "./components/ui/social";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,13 +22,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jinnah Xpert Solar | Solar Panels & Solutions in Pakistan",
+  title: "Jinnah Xperts Solar | Solar Panels & Solutions in Pakistan",
   description:
-    "Jinnah Xpert Solar offers high-efficiency solar panels and renewable energy solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi. Go solar now!",
+    "Jinnah Xperts Solar offers high-efficiency solar panels and renewable energy solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi. Go solar now!",
   keywords: [
     "solar panels Pakistan",
     "solar panel manufacturer Pakistan",
-    "Jinnah Xpert Solar",
+    "Jinnah Xperts Solar",
     "renewable energy Pakistan",
     "solar energy Karachi",
     "solar power for homes",
@@ -38,22 +39,22 @@ export const metadata: Metadata = {
     "jinnahexpert.com",
   ],
   authors: [
-    { name: "Jinnah Xpert Solar Team", url: "https://jinnahexpert.com" },
+    { name: "Jinnah Xperts Solar Team", url: "https://jinnahexpert.com" },
   ],
   robots:
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
-    title: "Jinnah Xpert Solar | Top Solar Solutions in Pakistan",
+    title: "Jinnah Xperts Solar | Top Solar Solutions in Pakistan",
     description:
-      "Switch to renewable energy with Jinnah Xpert Solar’s high-efficiency solar panels in Karachi, Lahore, Gujrat, and Rawalpindi. Contact us today!",
+      "Switch to renewable energy with Jinnah Xperts Solar’s high-efficiency solar panels in Karachi, Lahore, Gujrat, and Rawalpindi. Contact us today!",
     url: "https://jinnahexpert.com",
-    siteName: "Jinnah Xpert Solar",
+    siteName: "Jinnah Xperts Solar",
     images: [
       {
         url: "https://jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Panels - Renewable Energy Solutions",
+        alt: "Jinnah Xperts Solar Panels - Renewable Energy Solutions",
       },
     ],
     locale: "en_PK",
@@ -61,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jinnah Xpert Solar | Solar Panels in Pakistan",
+    title: "Jinnah Xperts Solar | Solar Panels in Pakistan",
     description:
-      "Go green with Jinnah Xpert Solar’s solar panels and energy solutions in Karachi, Lahore, and beyond. Contact us!",
+      "Go green with Jinnah Xperts Solar’s solar panels and energy solutions in Karachi, Lahore, and beyond. Contact us!",
     images: ["https://jinnahexpert.com/favicon.ico"],
     creator: "@jinnahexpert",
   },
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "Jinnah Xpert Solar",
+      name: "Jinnah Xperts Solar",
       url: "https://jinnahexpert.com",
       logo: "https://jinnahexpert.com/favicon.ico",
       address: [
@@ -163,9 +164,9 @@ export const metadata: Metadata = {
         },
       ],
       sameAs: [
-        "https://www.facebook.com/jinnahexpert",
-        "https://www.instagram.com/jinnahexpert",
-        "https://www.linkedin.com/company/jinnahexpert",
+        "https://www.facebook.com/profile.php?id=61575885641451",
+        "https://www.instagram.com/jinnah__xperts",
+        "https://www.linkedin.com/company/jinnahxpert",
       ],
     }),
   },
@@ -286,6 +287,7 @@ export default function RootLayout({
         <div className="fixed bottom-10 right-10 z-[9999] cursor-pointer">
           <Whatsapp />
         </div>
+        <SocialLinks />
       </body>
     </html>
   );

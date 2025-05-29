@@ -11,19 +11,19 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    text: "Jinnah Xpert installed our residential solar system, and the results are amazing! Our electricity bills have dropped significantly. The team was professional, quick, and very helpful throughout the process.",
+    text: "Jinnah Xperts installed our residential solar system, and the results are amazing! Our electricity bills have dropped significantly. The team was professional, quick, and very helpful throughout the process.",
     author: "Ahmed Raza",
     position: "Lahore"
   },
   {
     id: 2,
-    text: "We chose Jinnah Xpert for our factory’s solar setup, and it was the best decision. Their Commercial & Industrial solution is reliable and has helped us save big on energy costs.",
+    text: "We chose Jinnah Xperts for our factory’s solar setup, and it was the best decision. Their Commercial & Industrial solution is reliable and has helped us save big on energy costs.",
     author: "Muhammad Asif",
     position: "Faisalabad"
   },
   {
     id: 3,
-    text: "Thanks to Jinnah Xpert, our farm now runs on clean solar energy without any grid support. Their Agriculture Solar Solution is efficient and perfect for remote areas.",
+    text: "Thanks to Jinnah Xperts, our farm now runs on clean solar energy without any grid support. Their Agriculture Solar Solution is efficient and perfect for remote areas.",
     author: "Muhammad Imran",
     position: "Karachi"
   }

@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Solar Products | Jinnah Xpert Solar Energy Solutions Pakistan",
+  title: "Solar Products | Jinnah Xperts Solar Energy Solutions Pakistan",
   description:
-    "Explore Jinnah Xpert’s range of solar panels, inverters, and battery storage solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi.",
+    "Explore Jinnah Xperts’ range of solar panels, inverters, and battery storage solutions for homes and businesses in Karachi, Lahore, Gujrat, and Rawalpindi.",
   keywords: [
-    "Jinnah Xpert solar products",
+    "Jinnah Xperts solar products",
     "solar panels Pakistan",
     "solar inverters Karachi",
     "solar battery storage Lahore",
@@ -18,17 +18,17 @@ export const metadata = {
     "solar equipment Gujrat",
   ],
   openGraph: {
-    title: "Solar Products | Jinnah Xpert Solar Energy Solutions Pakistan",
+    title: "Solar Products | Jinnah Xperts Solar Energy Solutions Pakistan",
     description:
-      "Discover high-quality solar panels, inverters, and battery storage systems from Jinnah Xpert, serving Karachi, Lahore, Gujrat, and Rawalpindi.",
+      "Discover high-quality solar panels, inverters, and battery storage systems from Jinnah Xperts, serving Karachi, Lahore, Gujrat, and Rawalpindi.",
     url: "https://www.jinnahexpert.com/products",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Products",
+        alt: "Jinnah Xperts Solar Products",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Products | Jinnah Xpert",
+    title: "Solar Products | Jinnah Xperts",
     description:
-      "Browse Jinnah Xpert’s solar panels, inverters, and battery solutions for renewable energy in Pakistan.",
+      "Browse Jinnah Xperts’ solar panels, inverters, and battery solutions for renewable energy in Pakistan.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -78,9 +78,9 @@ export default function ProductsLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert offers high-quality solar panels, inverters, and battery storage solutions for renewable energy in Pakistan.",
+                "Jinnah Xperts offers high-quality solar panels, inverters, and battery storage solutions for renewable energy in Pakistan.",
               url: "https://www.jinnahexpert.com/products",
               logo: {
                 "@type": "ImageObject",
@@ -161,9 +161,9 @@ export default function ProductsLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
               makesOffer: [
                 {
@@ -175,7 +175,7 @@ export default function ProductsLayout({
                     image: "https://www.jinnahexpert.com/images/monocrystalline-panels.jpg",
                     brand: {
                       "@type": "Brand",
-                      name: "Jinnah Xpert",
+                      name: "Jinnah Xperts",
                     },
                   },
                 },
@@ -188,7 +188,7 @@ export default function ProductsLayout({
                     image: "https://www.jinnahexpert.com/images/solar-inverters.jpg",
                     brand: {
                       "@type": "Brand",
-                      name: "Jinnah Xpert",
+                      name: "Jinnah Xperts",
                     },
                   },
                 },

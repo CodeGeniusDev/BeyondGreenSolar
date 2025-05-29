@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Contact Jinnah Xpert | Solar Energy Solutions in Pakistan",
+  title: "Contact Jinnah Xperts | Solar Energy Solutions in Pakistan",
   description:
-    "Get in touch with Jinnah Xpert for solar panel installation and renewable energy solutions. Visit our offices in Karachi, Lahore, Gujrat, or Rawalpindi, or call us today.",
+    "Get in touch with Jinnah Xperts for solar panel installation and renewable energy solutions. Visit our offices in Karachi, Lahore, Gujrat, or Rawalpindi, or call us today.",
   keywords: [
-    "Jinnah Xpert contact",
+    "Jinnah Xperts contact",
     "solar company Pakistan",
     "solar panel installation Karachi",
     "solar energy Lahore",
@@ -18,17 +18,17 @@ export const metadata = {
     "solar solutions Gujrat",
   ],
   openGraph: {
-    title: "Contact Jinnah Xpert | Solar Energy Solutions in Pakistan",
+    title: "Contact Jinnah Xperts | Solar Energy Solutions in Pakistan",
     description:
-      "Reach out to Jinnah Xpert for expert solar panel installation and renewable energy services across Pakistan. Contact us in Karachi, Lahore, Gujrat, or Rawalpindi.",
+      "Reach out to Jinnah Xperts for expert solar panel installation and renewable energy services across Pakistan. Contact us in Karachi, Lahore, Gujrat, or Rawalpindi.",
     url: "https://www.jinnahexpert.com/contact",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Contact",
+        alt: "Jinnah Xperts Solar Contact",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Jinnah Xpert",
+    title: "Contact Jinnah Xperts",
     description:
-      "Contact Jinnah Xpert for solar energy solutions in Karachi, Lahore, Gujrat, or Rawalpindi. Call or email us for a free consultation.",
+      "Contact Jinnah Xperts for solar energy solutions in Karachi, Lahore, Gujrat, or Rawalpindi. Call or email us for a free consultation.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -78,9 +78,9 @@ export default function ContactLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert provides expert solar panel installation and renewable energy solutions across Pakistan. Contact us in Karachi, Lahore, Gujrat, or Rawalpindi.",
+                "Jinnah Xperts provides expert solar panel installation and renewable energy solutions across Pakistan. Contact us in Karachi, Lahore, Gujrat, or Rawalpindi.",
               url: "https://www.jinnahexpert.com/contact",
               logo: {
                 "@type": "ImageObject",
@@ -161,9 +161,9 @@ export default function ContactLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
             }),
           }}

@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"], display
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], display: "swap" });
 
 export const metadata = {
-  title: "Careers at Jinnah Xpert | Solar Energy Jobs in Pakistan",
+  title: "Careers at Jinnah Xperts | Solar Energy Jobs in Pakistan",
   description:
-    "Join Jinnah Xpert’s team to shape the future of solar energy in Pakistan. Explore career opportunities in solar panel installation, renewable energy, and more across Karachi, Lahore, Gujrat, and Rawalpindi.",
+    "Join Jinnah Xperts’ team to shape the future of solar energy in Pakistan. Explore career opportunities in solar panel installation, renewable energy, and more across Karachi, Lahore, Gujrat, and Rawalpindi.",
   keywords: [
-    "Jinnah Xpert careers",
+    "Jinnah Xperts careers",
     "solar jobs Pakistan",
     "solar panel installation jobs",
     "renewable energy careers",
@@ -18,17 +18,17 @@ export const metadata = {
     "solar careers Pakistan",
   ],
   openGraph: {
-    title: "Careers at Jinnah Xpert | Solar Energy Jobs in Pakistan",
+    title: "Careers at Jinnah Xperts | Solar Energy Jobs in Pakistan",
     description:
-      "Join Jinnah Xpert’s team to shape the future of solar energy in Pakistan. Explore career opportunities in solar panel installation and renewable energy.",
+      "Join Jinnah Xperts’ team to shape the future of solar energy in Pakistan. Explore career opportunities in solar panel installation and renewable energy.",
     url: "https://www.jinnahexpert.com/careers",
-    siteName: "Jinnah Xpert",
+    siteName: "Jinnah Xperts",
     images: [
       {
         url: "https://www.jinnahexpert.com/favicon.ico",
         width: 1200,
         height: 630,
-        alt: "Jinnah Xpert Solar Careers",
+        alt: "Jinnah Xperts Solar Careers",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers at Jinnah Xpert",
+    title: "Careers at Jinnah Xperts",
     description:
-      "Explore solar energy job opportunities with Jinnah Xpert in Pakistan. Join us in Karachi, Lahore, Gujrat, or Rawalpindi.",
+      "Explore solar energy job opportunities with Jinnah Xperts in Pakistan. Join us in Karachi, Lahore, Gujrat, or Rawalpindi.",
     images: ["https://www.jinnahexpert.com/favicon.ico"],
   },
 };
@@ -78,9 +78,9 @@ export default function CareerLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Jinnah Xpert",
+              name: "Jinnah Xperts",
               description:
-                "Jinnah Xpert is a leading solar energy company offering career opportunities in solar panel installation and renewable energy across Pakistan.",
+                "Jinnah Xperts is a leading solar energy company offering career opportunities in solar panel installation and renewable energy across Pakistan.",
               url: "https://www.jinnahexpert.com/careers",
               logo: {
                 "@type": "ImageObject",
@@ -161,22 +161,22 @@ export default function CareerLayout({
                 },
               ],
               sameAs: [
-                "https://www.facebook.com/jinnahexpert",
-                "https://www.twitter.com/jinnahexpert",
-                "https://www.linkedin.com/company/jinnahexpert",
+                "https://www.facebook.com/profile.php?id=61575885641451",
+                "https://www.instagram.com/jinnah__xperts",
+                "https://www.linkedin.com/company/jinnahxpert",
               ],
               jobPosting: [
                 {
                   "@type": "JobPosting",
                   title: "Solar Installation Technician",
                   description:
-                    "Join Jinnah Xpert as a Solar Installation Technician in Karachi, Lahore, Gujrat, or Rawalpindi. Install and maintain solar panels for residential and commercial clients.",
+                    "Join Jinnah Xperts as a Solar Installation Technician in Karachi, Lahore, Gujrat, or Rawalpindi. Install and maintain solar panels for residential and commercial clients.",
                   datePosted: "2025-05-27",
                   validThrough: "2025-08-27",
                   employmentType: "FULL_TIME",
                   hiringOrganization: {
                     "@type": "Organization",
-                    name: "Jinnah Xpert",
+                    name: "Jinnah Xperts",
                     sameAs: "https://www.jinnahexpert.com",
                   },
                   jobLocation: [

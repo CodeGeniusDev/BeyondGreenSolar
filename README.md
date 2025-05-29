@@ -1,4 +1,4 @@
-# JESolar – Jinnah Xpert (Private) Limited ☀️
+# JESolar – Jinnah Xperts (Private) Limited ☀️
 
 **Website:** [www.jinnahexpert.com](https://www.jinnahexpert.com)  
 **Location:** Pakistan  
@@ -8,7 +8,7 @@
 
 ## 💡 About JESolar
 
-**Jinnah Xpert (Private) Limited** is a premier provider of end-to-end solar energy solutions tailored for residential, commercial, and industrial sectors across Pakistan. At JESolar, our mission is to lead the transition toward a greener and more sustainable future.
+**Jinnah Xperts (Private) Limited** is a premier provider of end-to-end solar energy solutions tailored for residential, commercial, and industrial sectors across Pakistan. At JESolar, our mission is to lead the transition toward a greener and more sustainable future.
 
 We specialize in delivering cost-effective, high-quality solar installations and energy-efficient systems by adhering to global best practices in Installation and Commissioning for Tier-1 PV solar projects.
 
@@ -39,6 +39,14 @@ We specialize in delivering cost-effective, high-quality solar installations and
 **📍 Office:** Lahore, Pakistan  
 **📧 Email:** [info@jinnahexpert.com](mailto:info@jinnahexpert.com)  
 **🌐 Website:** [www.jinnahexpert.com](https://www.jinnahexpert.com)
+
+---
+
+## 🌐 Connect With Us
+
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61575885641451)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jinnah__xperts)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/jinnahxpert)
 
 ---
 
