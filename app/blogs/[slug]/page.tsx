@@ -5,6 +5,13 @@ import Link from "next/link";
 import Head from "next/head";
 import { Inter, Poppins } from "next/font/google";
 import { useParams } from "next/navigation";
+import dynamic from 'next/dynamic';
+
+// Dynamically import VerticalAd with SSR disabled
+const VerticalAd = dynamic(
+  () => import('@/app/components/ui/AdSenseAd').then(mod => mod.VerticalAd),
+  { ssr: false }
+);
 
 const inter = Inter({
   subsets: ["latin"],
@@ -631,7 +638,10 @@ const BlogPostPage = () => {
   };
 
   return (
-    <div className={`bg-white text-gray-800 min-h-screen ${inter.className}`}>
+    <div className="bg-white text-gray-800 min-h-screen relative font-sans">
+      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-10 w-48 hidden lg:block">
+        <VerticalAd />
+      </div>
       {/* <Head>
         <title>{post.title} - Solar Insights Blog</title>
         <meta name="description" content={post.excerpt} />
