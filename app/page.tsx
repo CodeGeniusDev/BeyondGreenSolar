@@ -27,9 +27,9 @@ const Page = () => {
       </div>
       
       {/* Auto Relaxed Ad Unit */}
-      <div className="container mx-auto px-4 py-8">
+      {/* <div className="container mx-auto px-4 py-8">
         <AutoRelaxedAd />
-      </div>
+      </div> */}
 
       <SecondSection />
       <div className="container mx-auto px-4 py-8">
