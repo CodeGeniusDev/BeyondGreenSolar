@@ -58,18 +58,18 @@ const products = [
 ];
 
 const ProjectsPage = () => {
-  const [showPopup, setShowPopup] = useState(true);
+  // const [showPopup, setShowPopup] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(false);
-    }, 3000); // Auto-close popup after 3s
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowPopup(false);
+  //   }, 3000); // Auto-close popup after 3s
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
-      {showPopup && (
+      {/* {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl p-8 shadow-lg text-center max-w-sm w-full">
             <h3 className="text-2xl font-bold text-[#333333] mb-4">
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden">
         <div
