@@ -6,7 +6,7 @@ import OfflineFooter from "./components/OfflineFooter";
 import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
 import "./globals.css";
-import SocialLinks from "./components/ui/social";
+// import SocialLinks from "./components/ui/social";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -280,9 +280,9 @@ export default function RootLayout({
         <div className="fixed bottom-10 right-10 z-[9999] cursor-pointer">
           <Whatsapp />
         </div>
-        <div className="fixed top-[40%] -left-[2px] z-[99]">
+        {/* <div className="fixed top-[40%] -left-[2px] z-[99]">
           <SocialLinks />
-        </div>
+        </div> */}
       </body>
     </html>
   );
