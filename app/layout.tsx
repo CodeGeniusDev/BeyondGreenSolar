@@ -7,6 +7,7 @@ import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
 import "./globals.css";
 // import SocialLinks from "./components/ui/social";
+import ServiceWorker from "./components/ServiceWorker";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -283,6 +284,7 @@ export default function RootLayout({
         {/* <div className="fixed top-[40%] -left-[2px] z-[99]">
           <SocialLinks />
         </div> */}
+        <ServiceWorker />
       </body>
     </html>
   );
