@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import { NavbarSection } from "./components/NavbarSection";
-import Footer from "./components/Footer/footer";
+// import Footer from "./components/Footer/footer";
+import OfflineFooter from "./components/OfflineFooter";
 import Whatsapp from "./components/ui/Whatsapp";
 import Script from "next/script";
 import "./globals.css";
@@ -274,7 +275,8 @@ export default function RootLayout({
       <body className="antialiased overflow-x-hidden">
         <NavbarSection />
         <main role="main">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
+        <OfflineFooter />
         <div className="fixed bottom-10 right-10 z-[9999] cursor-pointer">
           <Whatsapp />
         </div>
