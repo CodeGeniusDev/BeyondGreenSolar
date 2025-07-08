@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaExclamationTriangle } from "react-icons/fa";
 
 export const metadata = {
-  title: "Website Offline | Jinnah Xpert Solar",
-  description: "Website offline. Commitment was made, but payment wasn’t.",
+  title: "Coming Soon | Jinnah Xpert Solar",
+  description: "We're working on something amazing! Check back soon for updates.",
   robots: "noindex, nofollow",
 };
 
@@ -23,33 +23,31 @@ export default function OfflinePage() {
             </div>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Website Offline
+            Coming Soon
           </h1>
           <p className="text-white/90 text-lg font-semibold">
-            Commitment was made, but payment wasn’t.
+            We're working on something amazing!
           </p>
         </div>
 
         <div className="p-8 md:p-10">
-          <div className="bg-red-700/10 border-l-4 border-red-700 p-5 mb-8 rounded-r-lg">
-            <p className="text-red-200 font-semibold text-base">
-              <span className="font-bold">Service Suspended:</span>
-              This website has been taken offline due to unpaid dues.
-              Deliverables were completed — payment was not.
+          <div className="bg-blue-700/10 border-l-4 border-blue-700 p-5 mb-8 rounded-r-lg">
+            <p className="text-blue-200 font-semibold text-base">
+              <span className="font-bold">Under Construction:</span>
+              We're currently working hard to bring you an amazing experience.
             </p>
-            <p className="text-red-300 font-medium mt-3">
-              Clear your balance to restore the website. Professional work
-              deserves professional responsibility.
+            <p className="text-blue-300 font-medium mt-3">
+              Stay tuned for updates as we prepare to launch something special.
             </p>
           </div>
         </div>
 
         <div className="px-10 pb-10">
           <Link
-            href="mailto:codegenius.inc@gmail.com"
+            href="/"
             className="inline-block bg-[#019D4D] hover:bg-[#008040] text-white font-medium text-sm px-6 py-3 rounded-lg transition duration-200"
           >
-            Contact for Payment
+            Back to Home
           </Link>
         </div>
       </div>

@@ -7,9 +7,9 @@ export default function OfflineFooter() {
             <h3 className="text-xl font-bold text-white">Jinnah Xpert Solar</h3>
           </div>
 
-          <div className="py-4 px-6 bg-gray-800/50 rounded-lg border border-gray-700/50 max-w-md mx-auto text-white">
-            <p className="text-red-300 font-medium text-center">
-              "Website offline. Commitment was made, but payment wasn't."
+          <div className="py-4 px-6 bg-blue-900/30 rounded-lg border border-blue-700/50 max-w-md mx-auto text-white">
+            <p className="text-blue-200 font-medium text-center">
+              We're working on something amazing! Check back soon for updates.
             </p>
           </div>
 
