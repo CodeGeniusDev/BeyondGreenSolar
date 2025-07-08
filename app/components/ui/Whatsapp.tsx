@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Button: React.FC = () => {
   return (
-    <Link href="https://wa.me/+923338211195" target="_blank">
+    <Link href="https://wa.me/+923008285818" target="_blank">
     {/* <Link href="https://wa.me/+923291540015" target="_blank"> */}
       <div className="group relative flex items-center justify-center z-[9999] text-[#019D4D] bg-white border border-[#019D4D] rounded-full p-2.5 cursor-pointer">
         <button className="focus:outline-none">
