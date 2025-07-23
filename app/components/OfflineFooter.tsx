@@ -7,9 +7,11 @@ export default function OfflineFooter() {
             <h3 className="text-xl font-bold text-white">Jinnah Xpert Solar</h3>
           </div>
 
-          <div className="py-4 px-6 bg-blue-900/30 rounded-lg border border-blue-700/50 max-w-md mx-auto text-white">
-            <p className="text-blue-200 font-medium text-center">
-              We're working on something amazing! Check back soon for updates.
+          <div className="py-4 px-6 bg-red-900/30 rounded-lg border border-red-700/50 max-w-md mx-auto text-white">
+            <p className="text-red-200 font-medium text-center">
+              ⚠️ This project is temporarily marked due to{" "}
+              <strong>pending payment</strong>. Kindly resolve to restore full
+              service.
             </p>
           </div>
 
